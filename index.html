@@ -3,93 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#06060a" />
-  <meta name="description" content="VoidTools — a private native utility workspace for Windows." />
-  <meta property="og:title" content="VoidTools — Native Utility Workspace" />
-  <meta property="og:description" content="System tools, diagnostics and development workflows in one focused Windows application." />
+  <meta name="theme-color" content="#08080b" />
+  <meta name="description" content="VoidTools — a focused Windows utility workspace." />
+  <meta property="og:title" content="VoidTools — Windows Utility Workspace" />
+  <meta property="og:description" content="System tools, diagnostics and development utilities in one focused application." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://lordsniper007.github.io/" />
   <meta property="og:image" content="https://lordsniper007.github.io/voidtools-dashboard.png" />
-  <title>VoidTools — Native Utility Workspace</title>
+  <title>VoidTools — Windows Utility Workspace</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="/favicon.svg?v=20260715-2" type="image/svg+xml" />
-  <link rel="stylesheet" href="/styles.css?v=20260715-2" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.svg?v=20260715-3" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css?v=20260715-3" />
 </head>
 <body>
-  <div class="site-lines" aria-hidden="true"></div>
-  <div class="void-rail" aria-hidden="true"><span class="void-rail-progress"></span></div>
-
-  <header class="header shell">
-    <a class="brand" href="#top" aria-label="VoidTools home">
-      <span class="brand-mark">V</span>
-      <span>VoidTools</span>
-    </a>
-    <nav aria-label="Main navigation"><a href="#workspace">Workspace</a><a href="#capabilities">Capabilities</a><a href="#status">Status</a></nav>
-    <span class="header-build"><i></i> Private build</span>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="VoidTools home">
+        <span class="brand-mark">V</span>
+        <span>VoidTools</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#product">Product</a>
+        <a href="#development">Development</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero shell">
-      <div class="hero-copy">
-        <h1>Control your system.<br /><em>Keep your flow.</em></h1>
-        <p>System tools, diagnostics and technical workflows brought together in one focused Windows application.</p>
-        <div class="hero-actions">
-          <a class="primary" href="#workspace">Explore the workspace <span>↘</span></a>
-          <a class="secondary" href="#status">Development status</a>
+    <section class="hero">
+      <div class="container hero-copy">
+        <h1>Your system.<br /><span>Without the clutter.</span></h1>
+        <p>VoidTools brings diagnostics, maintenance and development utilities into one focused Windows workspace.</p>
+        <a class="button" href="#product">View the workspace</a>
+      </div>
+
+      <div id="product" class="preview wide-container">
+        <div class="preview-halo" aria-hidden="true"></div>
+        <img src="/voidtools-dashboard.png?v=20260715-3" alt="VoidTools dashboard with complete system charts and available modules" width="1587" height="991" />
+      </div>
+    </section>
+
+    <section class="features container" aria-labelledby="features-title">
+      <div class="section-heading">
+        <h2 id="features-title">One workspace.<br />Only what matters.</h2>
+        <p>Every part of VoidTools follows the same clear interface, so the application stays predictable as it grows.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article>
+          <h3>System tools</h3>
+          <p>Maintenance, optimization and recovery utilities kept together.</p>
+        </article>
+        <article>
+          <h3>Diagnostics</h3>
+          <p>Live system and network information presented without noise.</p>
+        </article>
+        <article>
+          <h3>Development</h3>
+          <p>Focused tools for code, scripts and technical workflows.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="development" class="development container">
+      <div>
+        <h2>Built privately.<br />Released when ready.</h2>
+        <p>VoidTools is still being integrated and tested. The source code and downloads remain private during development.</p>
+      </div>
+      <div class="development-state">
+        <span class="status-dot" aria-hidden="true"></span>
+        <div>
+          <strong>In development</strong>
+          <p>Modules, workflows and the native core are being refined.</p>
         </div>
-      </div>
-
-      <div class="void-stage" aria-hidden="true">
-        <div class="aperture-halo"></div>
-        <div class="aperture-v"><i class="blade blade-left"></i><i class="blade blade-right"></i><span class="aperture-scan"></span></div>
-        <div class="hero-product">
-          <div class="hero-product-bar"><span><i></i> CORE / 01</span><b>PRIVATE PREVIEW</b></div>
-          <img src="/voidtools-dashboard.png?v=20260715-2" alt="" width="1587" height="991" />
-        </div>
-        <div class="aperture-tip"><b>V</b><span>VOID / ACTIVE</span></div>
-        <span class="telemetry telemetry-a">BUILD / PRIVATE</span>
-        <span class="telemetry telemetry-b">MODULE / SYSTEM</span>
-        <span class="telemetry telemetry-c">SIGNAL / STABLE</span>
-      </div>
-    </section>
-
-    <section id="workspace" class="workspace shell-wide">
-      <div class="workspace-heading shell">
-        <div><span class="section-code">01 / WORKSPACE</span><h2>The actual product.<br />Nothing simulated.</h2></div>
-        <p>One interface for live system information, module access and operation history.</p>
-      </div>
-      <div class="app-frame">
-        <div class="app-framebar"><div class="app-id"><span>V</span><b>VoidTools</b></div><div class="app-path"><i></i> Dashboard / Workspace overview</div><span class="app-preview">PRIVATE PREVIEW</span></div>
-        <img src="/voidtools-dashboard.png?v=20260715-2" alt="VoidTools dashboard with complete system charts and available modules" width="1587" height="991" />
-      </div>
-      <div class="workspace-facts"><span>Native Windows application</span><span>10+ integrated modules</span><span>Live operation feedback</span><span>Local workspace settings</span></div>
-    </section>
-
-    <section id="capabilities" class="capabilities shell">
-      <div class="section-intro"><span class="section-code">02 / CAPABILITIES</span><h2>Built around the work,<br />not around menus.</h2><p>Every module follows the same interaction model, so the application remains predictable as it grows.</p></div>
-      <div class="capability-list">
-        <article><span class="cap-index">01</span><div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M8 9 4 12l4 3m8-6 4 3-4 3m-3-9-2 12"/></svg></div><div><h3>Development tools</h3><p>Focused utilities for code, scripts and technical workflows.</p></div><span class="arrow">↗</span></article>
-        <article><span class="cap-index">02</span><div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 16l4-5 3 3 5-7"/></svg></div><div><h3>Diagnostics</h3><p>Readable system and network information with persistent context.</p></div><span class="arrow">↗</span></article>
-        <article><span class="cap-index">03</span><div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div><div><h3>System care</h3><p>Maintenance, backup and recovery before important changes.</p></div><span class="arrow">↗</span></article>
-      </div>
-    </section>
-
-    <section id="status" class="status shell">
-      <div class="status-copy"><span class="section-code">03 / DEVELOPMENT</span><h2>Private by design.<br />Released when ready.</h2><p>VoidTools is still being integrated and tested. The source and downloads remain private during development.</p></div>
-      <div class="status-track">
-        <div class="status-line"><span class="fill"></span></div>
-        <ol><li class="complete"><i></i><div><strong>Foundation</strong><span>Native core and interface</span></div></li><li class="active"><i></i><div><strong>Integration</strong><span>Modules and workflows</span></div></li><li><i></i><div><strong>Closed testing</strong><span>Private validation</span></div></li><li><i></i><div><strong>Release</strong><span>No date yet</span></div></li></ol>
       </div>
     </section>
   </main>
 
-  <footer class="footer shell">
-    <a class="brand" href="#top"><span class="brand-mark">V</span><span>VoidTools</span></a>
-    <p>Private software project. All rights reserved.</p>
-    <span>© <span id="year"></span> VoidTools</span>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top"><span class="brand-mark">V</span><span>VoidTools</span></a>
+      <p>Private software project.</p>
+      <span>© <span id="year"></span> VoidTools</span>
+    </div>
   </footer>
-  <script src="/script.js?v=20260715-2" defer></script>
+
+  <script src="/script.js?v=20260715-3" defer></script>
 </body>
 </html>
