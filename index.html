@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08080c" />
+  <meta name="description" content="VoidTools is a private Windows utility workspace currently in active development." />
+  <meta property="og:title" content="VoidTools — Your Windows workspace, refined." />
+  <meta property="og:description" content="A private Windows utility workspace for focused system care, development and diagnostics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lordsniper007.github.io/" />
+  <title>VoidTools — Your Windows workspace, refined.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="page-glow glow-one" aria-hidden="true"></div>
+  <div class="page-glow glow-two" aria-hidden="true"></div>
+
+  <header class="topbar shell">
+    <a class="brand" href="#top" aria-label="VoidTools home">
+      <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 4 32 9v9c0 8.1-4.8 14.3-12 18-7.2-3.7-12-9.9-12-18V9l12-5Z"/><path class="brand-check" d="m14.5 19 4 4 7-8"/></svg></span>
+      <span class="brand-name">VoidTools</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation"><a href="#product">Product</a><a href="#capabilities">Capabilities</a><a href="#roadmap">Roadmap</a></nav>
+    <div class="private-badge"><span></span> Private development</div>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <div class="kicker"><span class="kicker-line"></span> Native Windows workspace</div>
+        <h1>Everything useful.<br /><em>Nothing in the way.</em></h1>
+        <p>VoidTools brings essential Windows utilities, diagnostics and development workflows into one precise desktop experience.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#product">Explore VoidTools <svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></a>
+          <a class="button button-quiet" href="#roadmap"><span class="pulse-dot"></span> See development status</a>
+        </div>
+        <div class="hero-meta"><div><strong>Native</strong><span>C++20 core</span></div><div><strong>Modern</strong><span>React interface</span></div><div><strong>Focused</strong><span>One workspace</span></div></div>
+      </div>
+
+      <div class="product-stage reveal" aria-label="VoidTools interface preview">
+        <div class="stage-orbit orbit-one"></div><div class="stage-orbit orbit-two"></div><div class="window-shadow"></div>
+        <div class="app-window">
+          <div class="app-topbar"><div class="app-wordmark"><span>V</span> VoidTools</div><div class="app-controls"><i></i><i></i><i></i></div></div>
+          <div class="app-layout">
+            <aside class="app-nav">
+              <div class="app-user"><span>V</span><div><b>Workspace</b><small>Private build</small></div></div>
+              <div class="app-nav-label">OVERVIEW</div><div class="app-nav-item selected"><i></i>Dashboard</div>
+              <div class="app-nav-label">TOOLS</div><div class="app-nav-item"><i></i>System care</div><div class="app-nav-item"><i></i>Diagnostics</div><div class="app-nav-item"><i></i>Development</div><div class="app-nav-item"><i></i>Backup</div>
+              <div class="app-nav-bottom"><i></i>Settings</div>
+            </aside>
+            <div class="app-main">
+              <div class="app-heading"><div><span>GOOD EVENING</span><h2>Your workspace is ready.</h2><p>Everything looks good on this device.</p></div><div class="ready-pill"><i></i> All systems ready</div></div>
+              <div class="stat-grid">
+                <article><div><span>CPU</span><b>18%</b></div><div class="spark purple-spark"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Normal usage</small></article>
+                <article><div><span>MEMORY</span><b>42%</b></div><div class="spark blue-spark"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>6.7 GB available</small></article>
+                <article><div><span>NETWORK</span><b>12 <em>MB/s</em></b></div><div class="spark green-spark"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Stable connection</small></article>
+              </div>
+              <div class="quick-title"><div><span>QUICK ACCESS</span><b>Continue where you left off</b></div><button type="button">Customize</button></div>
+              <div class="quick-grid">
+                <article><div class="quick-icon violet">{ }</div><div><b>Development</b><span>Technical workspace</span></div><strong>↗</strong></article>
+                <article><div class="quick-icon cyan">⌁</div><div><b>Diagnostics</b><span>Clear system reports</span></div><strong>↗</strong></article>
+                <article><div class="quick-icon orange">⌘</div><div><b>System care</b><span>Windows controls</span></div><strong>↗</strong></article>
+                <article><div class="quick-icon green">↻</div><div><b>Recovery</b><span>Snapshots & backup</span></div><strong>↗</strong></article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-status"><span class="status-check">✓</span><div><small>OPERATION COMPLETE</small><strong>System scan finished</strong></div><i>100%</i></div>
+      </div>
+    </section>
+
+    <section class="product-strip"><div class="shell strip-inner"><span>Built for Windows 10 & 11</span><i></i><span>C++20 native core</span><i></i><span>WebView2 interface</span><i></i><span>Active private development</span></div></section>
+
+    <section id="product" class="product shell">
+      <div class="section-head reveal"><div><div class="kicker"><span class="kicker-line"></span> Designed as one system</div><h2>Less switching.<br /><em>More doing.</em></h2></div><p>Instead of collecting disconnected utilities, VoidTools gives every workflow the same structure, feedback and visual language.</p></div>
+      <div class="bento">
+        <article class="bento-card bento-large reveal">
+          <div class="card-copy"><span class="card-index">01 / WORKSPACE</span><h3>One calm dashboard<br />for the entire system.</h3><p>Live context, recent activity and the tools you use most — arranged around your workflow.</p></div>
+          <div class="activity-panel"><div class="activity-head"><div><small>SYSTEM ACTIVITY</small><b>Live overview</b></div><span>Now</span></div><div class="activity-chart"><svg viewBox="0 0 520 150" preserveAspectRatio="none"><defs><linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8b5cf6" stop-opacity=".28"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></linearGradient></defs><path class="chart-area" d="M0 126 C42 120 55 92 91 98S145 129 181 98 233 61 268 74 320 116 355 93 406 29 443 47 489 87 520 40V150H0Z"/><path class="chart-line" d="M0 126 C42 120 55 92 91 98S145 129 181 98 233 61 268 74 320 116 355 93 406 29 443 47 489 87 520 40"/></svg><span class="chart-point"></span></div><div class="chart-labels"><span>12:00</span><span>14:00</span><span>16:00</span><span>18:00</span><span>Now</span></div></div>
+        </article>
+        <article class="bento-card bento-tall reveal"><div class="card-copy"><span class="card-index">02 / FEEDBACK</span><h3>Know what is happening.</h3><p>Every operation reports its state clearly — from start to completion.</p></div><div class="operation-list"><div class="operation done"><span>✓</span><div><b>System analysis</b><small>Completed successfully</small></div><em>100%</em></div><div class="operation running"><span>↻</span><div><b>Creating snapshot</b><small>Securing current state</small></div><em>72%</em></div><div class="operation waiting"><span>·</span><div><b>Apply changes</b><small>Waiting in queue</small></div><em>—</em></div></div></article>
+        <article class="bento-card bento-small reveal"><div class="mini-feature-icon violet">◎</div><div class="card-copy"><span class="card-index">03 / PERSONAL</span><h3>Your layout.</h3><p>Keep frequent tools close and the rest out of sight.</p></div></article>
+      </div>
+    </section>
+
+    <section id="capabilities" class="capabilities shell">
+      <div class="section-head compact reveal"><div><div class="kicker"><span class="kicker-line"></span> Core capabilities</div><h2>Built around real<br /><em>Windows workflows.</em></h2></div><p>The public site presents the product at a high level while the full implementation remains private.</p></div>
+      <div class="capability-grid">
+        <article class="capability reveal"><span>01</span><div class="capability-icon violet">{ }</div><h3>Development workspace</h3><p>Focused tools for code, scripts and technical projects.</p><div class="capability-tags"><i>Scripts</i><i>Builders</i><i>Utilities</i></div></article>
+        <article class="capability reveal"><span>02</span><div class="capability-icon cyan">⌁</div><h3>Diagnostics</h3><p>Readable information about the system and network environment.</p><div class="capability-tags"><i>Reports</i><i>Status</i><i>History</i></div></article>
+        <article class="capability reveal"><span>03</span><div class="capability-icon orange">⌘</div><h3>System care</h3><p>A structured way to review and manage common Windows settings.</p><div class="capability-tags"><i>Windows</i><i>Control</i><i>Progress</i></div></article>
+        <article class="capability reveal"><span>04</span><div class="capability-icon green">↻</div><h3>Backup & recovery</h3><p>Snapshots and recovery options available before important changes.</p><div class="capability-tags"><i>Backup</i><i>Restore</i><i>Safety</i></div></article>
+        <article class="capability reveal"><span>05</span><div class="capability-icon blue">◫</div><h3>Unified operations</h3><p>Consistent logs, progress and completion states across the app.</p><div class="capability-tags"><i>Logs</i><i>Queue</i><i>Results</i></div></article>
+        <article class="capability reveal"><span>06</span><div class="capability-icon pink">✦</div><h3>Personal workspace</h3><p>Quick access and interface preferences that stay with you.</p><div class="capability-tags"><i>Layout</i><i>Theme</i><i>Focus</i></div></article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="roadmap shell">
+      <div class="roadmap-panel reveal">
+        <div class="roadmap-copy"><div class="kicker"><span class="kicker-line"></span> Development status</div><h2>Private now.<br /><em>Public when ready.</em></h2><p>VoidTools is being developed privately. The website is a product preview — source code and public downloads are not available yet.</p><div class="roadmap-status"><span><i></i> Active development</span><small>Last updated · July 2026</small></div></div>
+        <div class="timeline">
+          <article class="complete"><div class="timeline-mark">✓</div><div><span>FOUNDATION</span><h3>Native core & interface</h3><p>Desktop shell, navigation and shared operation system.</p></div><small>Complete</small></article>
+          <article class="current"><div class="timeline-mark"></div><div><span>CURRENT PHASE</span><h3>Module integration</h3><p>Connecting tools, refining flows and improving reliability.</p></div><small>In progress</small></article>
+          <article><div class="timeline-mark"></div><div><span>NEXT</span><h3>Closed testing</h3><p>Small private test group and release preparation.</p></div><small>Planned</small></article>
+          <article><div class="timeline-mark"></div><div><span>LATER</span><h3>First public release</h3><p>Distribution begins only when the product is ready.</p></div><small>No date</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing shell reveal"><div class="closing-aura"></div><div class="brand-symbol large" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 4 32 9v9c0 8.1-4.8 14.3-12 18-7.2-3.7-12-9.9-12-18V9l12-5Z"/><path class="brand-check" d="m14.5 19 4 4 7-8"/></svg></div><div class="kicker"><span class="kicker-line"></span> VoidTools</div><h2>A better toolbox<br />starts with better focus.</h2><p>Private Windows software, currently under active development.</p><div class="closed-pill"><span></span> Closed beta planned</div></section>
+  </main>
+
+  <footer class="footer shell"><a class="brand footer-brand" href="#top"><span class="brand-symbol"><svg viewBox="0 0 40 40"><path d="M20 4 32 9v9c0 8.1-4.8 14.3-12 18-7.2-3.7-12-9.9-12-18V9l12-5Z"/><path class="brand-check" d="m14.5 19 4 4 7-8"/></svg></span><span class="brand-name">VoidTools</span></a><p>Private project. All rights reserved.</p><span>© <span id="current-year"></span> VoidTools</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
