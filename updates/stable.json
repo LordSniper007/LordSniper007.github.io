@@ -1,16 +1,19 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.0.1",
-    "publishedAt":  "2026-07-16T09:11:50Z",
+    "version":  "2.0.2",
+    "publishedAt":  "2026-07-16T12:14:29Z",
     "mandatory":  false,
     "notes":  [
-                  "Gui inprovements"
+                  "New Dashboard",
+                  "Gui Update",
+                  "New Scan",
+                  "HWID Spoofer Inprovements"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.0.1/VoidTools-Setup-v2.0.1-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.0.1-win64.exe",
-                      "size":  7563920,
-                      "sha256":  "0d276ee02d5366c80a8f4f84b46ade142aa762264d80934f7cc5e65d99fb3683"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.0.2/VoidTools-Setup-v2.0.2-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.0.2-win64.exe",
+                      "size":  7677831,
+                      "sha256":  "ec8fa76d64852a9ea508e8a57279beb2b2794db95b1b73b975da163f2c1f09db"
                   }
 }
