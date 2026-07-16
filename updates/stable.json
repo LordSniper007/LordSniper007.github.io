@@ -1,0 +1,16 @@
+{
+    "schemaVersion":  1,
+    "channel":  "stable",
+    "version":  "2.0.0",
+    "publishedAt":  "2026-07-16T08:14:17Z",
+    "mandatory":  false,
+    "notes":  [
+                  "test"
+              ],
+    "installer":  {
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.0.0/VoidTools-Setup-v2.0.0-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.0.0-win64.exe",
+                      "size":  7564629,
+                      "sha256":  "14200a534639509839d9e5009d795dcda13a07fa7d8f9bca2ae8cdc6353ac77e"
+                  }
+}
