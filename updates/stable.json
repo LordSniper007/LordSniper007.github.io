@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.0.0",
-    "publishedAt":  "2026-07-16T08:14:17Z",
+    "version":  "2.0.1",
+    "publishedAt":  "2026-07-16T09:11:50Z",
     "mandatory":  false,
     "notes":  [
-                  "test"
+                  "Gui inprovements"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.0.0/VoidTools-Setup-v2.0.0-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.0.0-win64.exe",
-                      "size":  7564629,
-                      "sha256":  "14200a534639509839d9e5009d795dcda13a07fa7d8f9bca2ae8cdc6353ac77e"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.0.1/VoidTools-Setup-v2.0.1-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.0.1-win64.exe",
+                      "size":  7563920,
+                      "sha256":  "0d276ee02d5366c80a8f4f84b46ade142aa762264d80934f7cc5e65d99fb3683"
                   }
 }
