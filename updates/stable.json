@@ -1,17 +1,16 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.0.4",
-    "publishedAt":  "2026-07-17T09:19:50Z",
+    "version":  "2.0.5",
+    "publishedAt":  "2026-07-17T21:09:57Z",
     "mandatory":  false,
     "notes":  [
-                  "Windows Optimizer Rework",
-                  "Herobrine Removed"
+                  "Fix Check for updates"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.0.4/VoidTools-Setup-v2.0.4-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.0.4-win64.exe",
-                      "size":  7678101,
-                      "sha256":  "b9888d5825ec052c1c756a30290add4273b8e82ad1edb0a6a43f4ff60fc26da4"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.0.5/VoidTools-Setup-v2.0.5-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.0.5-win64.exe",
+                      "size":  7680503,
+                      "sha256":  "be903503fe05289024ba3be4713d7a16562b2aede5b53dd92fc145af718805a3"
                   }
 }
