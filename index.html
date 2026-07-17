@@ -26,7 +26,7 @@
       </a>
       <nav aria-label="Main navigation">
         <a href="#product">Product</a>
-        <a href="#development">Development</a>
+        <a href="#download">Download</a>
       </nav>
     </div>
   </header>
@@ -36,7 +36,16 @@
       <div class="container hero-copy">
         <h1>Your system.<br /><span>Without the clutter.</span></h1>
         <p>VoidTools brings diagnostics, maintenance and development utilities into one focused Windows workspace.</p>
-        <a class="button" href="#product">View the workspace</a>
+        <div class="hero-actions">
+          <a
+            id="download-button"
+            class="button"
+            href="https://github.com/LordSniper007/LordSniper007.github.io/releases/latest"
+            download
+          >Download for Windows</a>
+          <a class="button button-secondary" href="#product">View the workspace</a>
+        </div>
+        <p id="download-meta" class="download-meta" hidden></p>
       </div>
 
       <div id="product" class="preview wide-container">
@@ -67,16 +76,22 @@
       </div>
     </section>
 
-    <section id="development" class="development container">
+    <section id="download" class="development container">
       <div>
-        <h2>Built privately.<br />Released when ready.</h2>
-        <p>VoidTools is still being integrated and tested. The source code and downloads remain private during development.</p>
+        <h2>Get VoidTools.<br />Windows x64 installer.</h2>
+        <p>Download the latest stable build for Windows. Existing installations can also update automatically through the in-app updater.</p>
       </div>
       <div class="development-state">
         <span class="status-dot" aria-hidden="true"></span>
         <div>
-          <strong>In development</strong>
-          <p>Modules, workflows and the native core are being refined.</p>
+          <strong id="download-status-title">Latest release</strong>
+          <p id="download-status-copy">Open the download page or use the button above for the current installer.</p>
+          <a
+            id="download-button-secondary"
+            class="button download-inline"
+            href="https://github.com/LordSniper007/LordSniper007.github.io/releases/latest"
+            download
+          >Download installer</a>
         </div>
       </div>
     </section>

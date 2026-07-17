@@ -135,6 +135,14 @@ a {
   line-height: 1.65;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
 .button {
   display: inline-flex;
   height: 48px;
@@ -147,12 +155,37 @@ a {
   box-shadow: 0 14px 34px rgba(78, 46, 158, 0.23);
   font-size: 14px;
   font-weight: 600;
-  transition: transform 180ms ease, background 180ms ease;
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 
 .button:hover {
   transform: translateY(-2px);
   background: #9870f8;
+}
+
+.button-secondary {
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+
+.button-secondary:hover {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: #353545;
+}
+
+.download-meta {
+  margin: 16px 0 0;
+  color: #6f6f7b;
+  font-size: 13px;
+}
+
+.download-inline {
+  margin-top: 18px;
+  height: 42px;
+  padding: 0 16px;
+  font-size: 13px;
 }
 
 .preview {
