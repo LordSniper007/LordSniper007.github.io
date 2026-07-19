@@ -156,6 +156,10 @@ function celebrateDownload(event) {
 
   event.preventDefault()
   const colors = ['#ab8cff', '#d2c5ff', '#87e7bd', '#ffffff', '#6e52cc']
+  const buttonBounds = link.getBoundingClientRect()
+  const hasPointerPosition = event.clientX !== 0 || event.clientY !== 0
+  const originX = hasPointerPosition ? event.clientX : buttonBounds.left + buttonBounds.width / 2
+  const originY = hasPointerPosition ? event.clientY : buttonBounds.top + buttonBounds.height / 2
   const layer = document.createElement('div')
   layer.className = 'confetti-layer'
   layer.setAttribute('aria-hidden', 'true')
@@ -163,11 +167,11 @@ function celebrateDownload(event) {
   for (let index = 0; index < 72; index += 1) {
     const piece = document.createElement('i')
     piece.className = 'confetti-piece'
-    piece.style.left = `${42 + Math.random() * 16}%`
-    piece.style.top = `${38 + Math.random() * 12}%`
+    piece.style.left = `${originX}px`
+    piece.style.top = `${originY}px`
     piece.style.backgroundColor = colors[index % colors.length]
-    piece.style.setProperty('--drift', `${(Math.random() - .5) * 82}vw`)
-    piece.style.setProperty('--drop', `${34 + Math.random() * 52}vh`)
+    piece.style.setProperty('--drift', `${(Math.random() - .5) * 38}vw`)
+    piece.style.setProperty('--drop', `${18 + Math.random() * 48}vh`)
     piece.style.setProperty('--turn', `${Math.round((Math.random() - .5) * 1080)}deg`)
     piece.style.animationDelay = `${Math.random() * 100}ms`
     layer.append(piece)
