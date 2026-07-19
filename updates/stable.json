@@ -1,16 +1,17 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.0.9",
-    "publishedAt":  "2026-07-19T15:09:01Z",
+    "version":  "2.1.0",
+    "publishedAt":  "2026-07-19T18:26:01Z",
     "mandatory":  false,
     "notes":  [
-                  "Dos Rework"
+                  "Join Discord button",
+                  "Visual fix in VoidG"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.0.9/VoidTools-Setup-v2.0.9-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.0.9-win64.exe",
-                      "size":  7752993,
-                      "sha256":  "cc309ff8b885b7e6a09ea643efe478465738758afe8d7fbf1589abbbbafeed81"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.0/VoidTools-Setup-v2.1.0-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.1.0-win64.exe",
+                      "size":  7752027,
+                      "sha256":  "ad0644aed69a3a365aa86980345df0b30e5e3222fcae0d2717719d528e0c3f29"
                   }
 }

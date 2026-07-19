@@ -2,10 +2,18 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.1.0",
+                         "publishedAt":  "2026-07-19T18:26:01Z",
+                         "notes":  [
+                                       "Join Discord button",
+                                       "Visual fix in VoidG"
+                                   ]
+                     },
+                     {
                          "version":  "2.0.9",
                          "publishedAt":  "2026-07-19T15:09:01Z",
                          "notes":  [
-        "Fixed DoS"
+                                       "Fixed DoS"
                                    ]
                      },
                      {
