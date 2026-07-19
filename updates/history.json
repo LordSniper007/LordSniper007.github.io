@@ -1,0 +1,23 @@
+{
+    "schemaVersion":  1,
+    "releases":  [
+                     {
+                         "version":  "2.0.9",
+                         "publishedAt":  "2026-07-19T15:09:01Z",
+                         "notes":  [
+                                       "Dos Rework"
+                                   ]
+                     },
+                     {
+                         "version":  "2.0.8",
+                         "publishedAt":  "2026-07-18T10:26:07Z",
+                         "notes":  [
+                                       "Added OSINT tool",
+                                       "Improved in-app settings",
+                                       "Lua deobfuscator improvements",
+                                       "Improved color picker",
+                                       "Small visual fixes"
+                                   ]
+                     }
+                 ]
+}

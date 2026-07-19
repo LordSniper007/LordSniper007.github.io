@@ -1,21 +1,16 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.0.8",
-    "publishedAt":  "2026-07-18T10:26:07Z",
+    "version":  "2.0.9",
+    "publishedAt":  "2026-07-19T15:09:01Z",
     "mandatory":  false,
     "notes":  [
-                  "Added Osint Tool",
-                  "Better in app settings",
-                  "Lua Deobfuscator is working slightly better",
-                  "Removed Quick tools from Windows Optimizer",
-                  "Better Color picker",
-                  "Small visual fixes"
+                  "Dos Rework"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.0.8/VoidTools-Setup-v2.0.8-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.0.8-win64.exe",
-                      "size":  7763103,
-                      "sha256":  "e3b55ad34cea87b8b541b10a3244c03b2137be42775f1981d7c9eff608a6477b"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.0.9/VoidTools-Setup-v2.0.9-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.0.9-win64.exe",
+                      "size":  7752993,
+                      "sha256":  "cc309ff8b885b7e6a09ea643efe478465738758afe8d7fbf1589abbbbafeed81"
                   }
 }
