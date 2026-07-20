@@ -2,6 +2,13 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.1.1",
+                         "publishedAt":  "2026-07-20T14:58:18Z",
+                         "notes":  [
+                                       "Better Lua Deobfuscator"
+                                   ]
+                     },
+                     {
                          "version":  "2.1.0",
                          "publishedAt":  "2026-07-19T18:26:01Z",
                          "notes":  [

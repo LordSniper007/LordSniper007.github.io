@@ -1,17 +1,16 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.1.0",
-    "publishedAt":  "2026-07-19T18:26:01Z",
+    "version":  "2.1.1",
+    "publishedAt":  "2026-07-20T14:58:18Z",
     "mandatory":  false,
     "notes":  [
-                  "Join Discord button",
-                  "Visual fix in VoidG"
+                  "Better Lua Deobfuscator"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.0/VoidTools-Setup-v2.1.0-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.1.0-win64.exe",
-                      "size":  7752027,
-                      "sha256":  "ad0644aed69a3a365aa86980345df0b30e5e3222fcae0d2717719d528e0c3f29"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.1/VoidTools-Setup-v2.1.1-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.1.1-win64.exe",
+                      "size":  7754918,
+                      "sha256":  "c2559cc924832326e7b34e2cbdc0e57a84a7239db7ade363d8c654cab0ad9744"
                   }
 }
