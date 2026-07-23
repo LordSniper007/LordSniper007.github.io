@@ -2,6 +2,16 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.1.2",
+                         "publishedAt":  "2026-07-23T18:51:31Z",
+                         "notes":  [
+                                       "Better Lua Deobfuscator",
+                                       "NEW VoidStream",
+                                       "Better Osint Tool",
+                                       "Discord Auto Quest SOON"
+                                   ]
+                     },
+                     {
                          "version":  "2.1.1",
                          "publishedAt":  "2026-07-20T14:58:18Z",
                          "notes":  [

@@ -1,16 +1,19 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.1.1",
-    "publishedAt":  "2026-07-20T14:58:18Z",
+    "version":  "2.1.2",
+    "publishedAt":  "2026-07-23T18:51:31Z",
     "mandatory":  false,
     "notes":  [
-                  "Better Lua Deobfuscator"
+                  "Better Lua Deobfuscator",
+                  "NEW VoidStream",
+                  "Better Osint Tool",
+                  "Discord Auto Quest SOON"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.1/VoidTools-Setup-v2.1.1-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.1.1-win64.exe",
-                      "size":  7754918,
-                      "sha256":  "c2559cc924832326e7b34e2cbdc0e57a84a7239db7ade363d8c654cab0ad9744"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.2/VoidTools-Setup-v2.1.2-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.1.2-win64.exe",
+                      "size":  7803872,
+                      "sha256":  "cf921c8ac6098065140b7758e5ccdad714859d18d2679f4ec3b338da7808fddf"
                   }
 }
