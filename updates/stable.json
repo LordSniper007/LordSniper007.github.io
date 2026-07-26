@@ -1,16 +1,17 @@
 {
-    "schemaVersion":  1,
-    "channel":  "stable",
-    "version":  "2.1.4",
-    "publishedAt":  "2026-07-26T15:35:56Z",
-    "mandatory":  false,
-    "notes":  [
-                  "Important Fix"
-              ],
-    "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.4/VoidTools-Setup-v2.1.4-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.1.4-win64.exe",
-                      "size":  18692286,
-                      "sha256":  "6950b88cb299e8cf8bdcb54370f47ffb095c0986d9587106fc9ff91be9f2adcd"
-                  }
+  "schemaVersion": 1,
+  "channel": "stable",
+  "version": "2.1.4",
+  "publishedAt": "2026-07-26T15:41:38Z",
+  "mandatory": false,
+  "notes": [
+    "Fixed update metadata signature fallback",
+    "Bundled Tor runtime and Discord Quest Runner"
+  ],
+  "installer": {
+    "url": "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.4/VoidTools-Setup-v2.1.4-win64.exe",
+    "fileName": "VoidTools-Setup-v2.1.4-win64.exe",
+    "size": 18676976,
+    "sha256": "6e7a0f4e9a276f058dbdafbdfbc7296a10a7eb7994992b88de0c544ec3b39505"
+  }
 }
