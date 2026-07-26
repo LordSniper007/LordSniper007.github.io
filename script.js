@@ -1,5 +1,5 @@
-const releaseEndpoint = 'updates/stable.json'
-const historyEndpoint = 'updates/history.json'
+const releaseEndpoint = '/updates/stable.json'
+const historyEndpoint = '/updates/history.json'
 
 document.querySelector('#year').textContent = new Date().getFullYear()
 
@@ -148,6 +148,21 @@ function startWordAnimation() {
   setTimeout(tick, 1900)
 }
 
+function startRevealAnimations() {
+  const elements = document.querySelectorAll('.principles, .releases-section .container, .download-section, .lua-feature, .tool-catalog, .explore-end')
+  if (!elements.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+  elements.forEach(element => element.classList.add('reveal'))
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return
+      entry.target.classList.add('is-visible')
+      observer.unobserve(entry.target)
+    })
+  }, { threshold: .12 })
+  elements.forEach(element => observer.observe(element))
+}
+
 function celebrateDownload(event) {
   if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
   const link = event.currentTarget
@@ -188,3 +203,4 @@ document.querySelectorAll('#download-button, #download-button-secondary').forEac
 
 loadReleaseData()
 startWordAnimation()
+startRevealAnimations()

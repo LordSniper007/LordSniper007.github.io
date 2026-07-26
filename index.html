@@ -23,6 +23,11 @@
   <main id="main-content">
     <section id="top" class="hero">
       <div class="hero-grid" aria-hidden="true"></div>
+      <a class="hero-explore" href="explore/">
+        <span class="hero-explore-kicker">Bro check this</span>
+        <span>See what else<br />VoidTools has to offer</span>
+        <span class="hero-explore-arrow" aria-hidden="true">↗</span>
+      </a>
       <div class="container hero-copy">
         <h1>Your system.<br /><span id="rotating-word" class="rotating-word" aria-live="polite">Without the clutter.</span></h1>
         <p class="hero-description">A calmer place for diagnostics, maintenance and focused technical work on Windows.</p>
@@ -77,8 +82,10 @@
           </div>
           <p>Every published build appears here automatically.</p>
         </div>
-        <div id="release-timeline" class="release-timeline" aria-live="polite">
-          <p class="timeline-loading">Loading release history…</p>
+        <div class="release-timeline-shell">
+          <div id="release-timeline" class="release-timeline" aria-live="polite" aria-label="Release history" tabindex="0">
+            <p class="timeline-loading">Loading release history…</p>
+          </div>
         </div>
       </div>
     </section>
@@ -98,18 +105,19 @@
       </div>
     </section>
 
-    <section class="explore-cta container" aria-labelledby="explore-title">
-      <p class="section-label">More to explore</p>
-      <h2 id="explore-title">Want to see everything<br />VoidTools has to offer?</h2>
-      <a class="text-link explore-link" href="explore.html">Click here <span aria-hidden="true">→</span></a>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Built for a clearer Windows workspace.</p>
-      <p>Created by <strong>kixo_oio</strong> · Find me on Discord.</p>
-      <span>© <span id="year"></span> VoidTools</span>
+      <div class="footer-copy">
+        <p>Built for a clearer Windows workspace.</p>
+        <p>Created by <strong>kixo_oio</strong> · <a class="footer-contact" href="https://discord.gg/wDz9Dw63A5" rel="noopener noreferrer">Official Discord</a>.</p>
+        <span>© <span id="year"></span> VoidTools</span>
+      </div>
+      <nav class="footer-legal" aria-label="Legal">
+        <a href="terms/">Terms of Service</a>
+        <a href="privacy/">Privacy Policy</a>
+      </nav>
     </div>
   </footer>
 
