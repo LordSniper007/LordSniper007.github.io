@@ -1,20 +1,16 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.1.3",
-    "publishedAt":  "2026-07-26T15:24:11Z",
+    "version":  "2.1.4",
+    "publishedAt":  "2026-07-26T15:35:56Z",
     "mandatory":  false,
     "notes":  [
-                  "Tor Tunel for VoidStream",
-                  "Fixed Lua Deobfuscator",
-                  "Added Discord Auto Quest",
-                  "Windows Optimizer fixes",
-                  "Small visual fixes"
+                  "Important Fix"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.3/VoidTools-Setup-v2.1.3-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.1.3-win64.exe",
-                      "size":  7842866,
-                      "sha256":  "339a5c272e33258adef3709ff9e33332e8f440e33e7bf209386b08f690c63cc3"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.4/VoidTools-Setup-v2.1.4-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.1.4-win64.exe",
+                      "size":  18692286,
+                      "sha256":  "6950b88cb299e8cf8bdcb54370f47ffb095c0986d9587106fc9ff91be9f2adcd"
                   }
 }
