@@ -2,6 +2,16 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.1.5",
+                         "publishedAt":  "2026-07-28T11:37:55Z",
+                         "notes":  [
+                                       "Fixed Windows Optimizer",
+                                       "Better Osint Tool",
+                                       "Fixed Tor Tunelling",
+                                       "Fixed Small Gui Problems"
+                                   ]
+                     },
+                     {
                          "version":  "2.1.4",
                          "publishedAt":  "2026-07-26T15:35:56Z",
                          "notes":  [
