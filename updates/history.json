@@ -2,6 +2,13 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.1.7",
+                         "publishedAt":  "2026-07-29T20:10:09Z",
+                         "notes":  [
+                                       "Fixed VoidLock"
+                                   ]
+                     },
+                     {
                          "version":  "2.1.6",
                          "publishedAt":  "2026-07-29T15:55:03Z",
                          "notes":  [
