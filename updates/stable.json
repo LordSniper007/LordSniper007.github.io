@@ -1,19 +1,24 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.1.5",
-    "publishedAt":  "2026-07-28T11:37:55Z",
+    "version":  "2.1.6",
+    "publishedAt":  "2026-07-29T15:55:03Z",
     "mandatory":  false,
     "notes":  [
-                  "Fixed Windows Optimizer",
-                  "Better Osint Tool",
-                  "Fixed Tor Tunelling",
-                  "Fixed Small Gui Problems"
+                  "Added VoidLock",
+                  "Added VoidLauncher",
+                  "Added VoidNotes",
+                  "Added Vlipboard",
+                  "Added VoidWatch",
+                  "Added VoidClean",
+                  "Added VoidRPC",
+                  "Fixed Small Gui Problems",
+                  "Added Help for Telegram Endpoint"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.5/VoidTools-Setup-v2.1.5-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.1.5-win64.exe",
-                      "size":  18656856,
-                      "sha256":  "b5564660f8ce05b66b787502943bd50c61d99bdb32cc8fa08f95db8c009ce7da"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.6/VoidTools-Setup-v2.1.6-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.1.6-win64.exe",
+                      "size":  18807012,
+                      "sha256":  "8325ef9dbbb478d98d67bf9002cfd38e57ffa20b58b15e9bc2717338340d733a"
                   }
 }

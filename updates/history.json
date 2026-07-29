@@ -2,6 +2,21 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.1.6",
+                         "publishedAt":  "2026-07-29T15:55:03Z",
+                         "notes":  [
+                                       "Added VoidLock",
+                                       "Added VoidLauncher",
+                                       "Added VoidNotes",
+                                       "Added Vlipboard",
+                                       "Added VoidWatch",
+                                       "Added VoidClean",
+                                       "Added VoidRPC",
+                                       "Fixed Small Gui Problems",
+                                       "Added Help for Telegram Endpoint"
+                                   ]
+                     },
+                     {
                          "version":  "2.1.5",
                          "publishedAt":  "2026-07-28T11:37:55Z",
                          "notes":  [
