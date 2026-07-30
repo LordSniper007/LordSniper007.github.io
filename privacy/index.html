@@ -1,28 +1,43 @@
 <!doctype html>
-<html lang="en" class="legal-document">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#090a0f" />
+  <meta name="theme-color" content="#090a0d" />
   <meta name="description" content="Privacy Policy explaining how VoidTools, Clerk, GitHub Pages and other providers handle information." />
-  <link rel="canonical" href="https://voidtools.software/privacy/" />
   <title>Privacy Policy — VoidTools</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../styles.css?v=beta-20260730-12" />
 </head>
 <body>
-  <main class="legal-page">
-    <section class="container legal-hero">
-      <a class="text-link back-link" href="../"><span aria-hidden="true">←</span> Back to home</a>
-      <p class="section-label">VoidTools / Legal</p>
-      <h1>Privacy<br />Policy.</h1>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <canvas id="dot-field" class="dot-field" aria-hidden="true"></canvas>
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navigation shell" aria-label="Main navigation">
+      <a class="brand" href="../" aria-label="VoidTools home"><span>VoidTools</span></a>
+      <div class="nav-links">
+        <a href="../">Home</a>
+        <a href="../explore/">Explore</a>
+        <a href="./" aria-current="page">Privacy</a>
+      </div>
+      <a class="nav-download js-latest-download" href="https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.7/VoidTools-Setup-v2.1.7-win64.exe"><span>Get the app</span><span aria-hidden="true">↘</span></a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="legal-page">
+    <section class="legal-hero shell">
+      <a class="legal-back" href="../"><span aria-hidden="true">←</span> Back to home</a>
+      <span class="section-index">VoidTools / Legal</span>
+      <h1>Privacy<br /><span>Policy.</span></h1>
       <p>Effective and last updated: July 26, 2026. This Policy explains how information is handled across the VoidTools website, desktop application, accounts and related services.</p>
     </section>
 
-    <div class="container legal-layout">
+    <div class="legal-layout shell">
       <aside class="legal-toc" aria-label="Privacy Policy contents">
         <p>On this page</p>
         <ol>
@@ -44,7 +59,7 @@
       <article class="legal-content">
         <section class="legal-notice">
           <strong>Privacy at a glance</strong>
-          <ul class="legal-summary-list">
+          <ul>
             <li>VoidTools does not operate a central database containing your workspace files, scans, reports or tool inputs.</li>
             <li>Your account and sign-in are provided by Clerk, which necessarily processes account and session data.</li>
             <li>Application settings, histories and outputs are generally stored locally on your Windows device.</li>
@@ -156,12 +171,19 @@
       </article>
     </div>
   </main>
+
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-copy"><p>Built for a clearer Windows workspace.</p><span>© <span id="year"></span> VoidTools</span></div>
-      <nav class="footer-legal" aria-label="Legal"><a href="../terms/">Terms of Service</a><a href="./">Privacy Policy</a></nav>
+    <div class="shell footer-inner">
+      <a class="brand brand-muted" href="../"><span>VoidTools</span></a>
+      <p>Built for a clearer Windows workspace.</p>
+      <div class="footer-links">
+        <a href="../explore/">Explore</a>
+        <a href="../terms/">Terms</a>
+        <span>© <span id="year"></span></span>
+      </div>
     </div>
   </footer>
-  <script src="../script.js" defer></script>
+
+  <script src="../script.js?v=beta-download-1" defer></script>
 </body>
 </html>

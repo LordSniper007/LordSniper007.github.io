@@ -3,124 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#090a0f" />
-  <meta name="description" content="VoidTools — a refined Windows utility workspace." />
-  <meta property="og:title" content="VoidTools — Windows Utility Workspace" />
-  <meta property="og:description" content="System tools and technical utilities in one focused Windows workspace." />
+  <meta name="theme-color" content="#090a0d" />
+  <meta name="description" content="VoidTools — a focused Windows workspace for diagnostics, maintenance and technical work." />
+  <meta property="og:title" content="VoidTools — Your system, fully yours." />
+  <meta property="og:description" content="Useful Windows tools, one quiet workspace." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://voidtools.software/" />
   <meta property="og:image" content="https://voidtools.software/voidtools-dashboard.png" />
-  <title>VoidTools — Windows Utility Workspace</title>
+  <title>VoidTools — Your system, fully yours.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=beta-20260730-12" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
+  <canvas id="dot-field" class="dot-field" aria-hidden="true"></canvas>
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navigation shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="VoidTools home">
+        <span>VoidTools</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="explore/">Explore</a>
+        <a href="#releases">Releases</a>
+        <a href="https://discord.gg/wDz9Dw63A5" target="_blank" rel="noopener noreferrer">Community</a>
+      </div>
+
+      <a class="nav-download js-latest-download" href="https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.7/VoidTools-Setup-v2.1.7-win64.exe">
+        <span>Get the app</span>
+        <span aria-hidden="true">↘</span>
+      </a>
+    </nav>
+  </header>
 
   <main id="main-content">
-    <section id="top" class="hero">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <a class="hero-explore" href="explore/">
-        <span class="hero-explore-kicker">Bro check this</span>
-        <span>See what else<br />VoidTools has to offer</span>
-        <span class="hero-explore-arrow" aria-hidden="true">↗</span>
-      </a>
-      <div class="container hero-copy">
-        <h1>Your system.<br /><span id="rotating-word" class="rotating-word" aria-live="polite">Without the clutter.</span></h1>
-        <p class="hero-description">A calmer place for diagnostics, maintenance and focused technical work on Windows.</p>
+    <section id="top" class="hero shell">
+      <div class="hero-copy">
+        <h1>Your system.<br /><span>Fully yours.</span></h1>
+        <p>Diagnostics, maintenance and focused technical tools in one calm workspace — without the clutter.</p>
+
         <div class="hero-actions">
-          <a id="download-button" class="button" href="https://github.com/LordSniper007/LordSniper007.github.io/releases/latest" download>
-            <span>Download for Windows</span><span aria-hidden="true">↓</span>
+          <a id="download-button" class="button button-primary js-latest-download" href="https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.7/VoidTools-Setup-v2.1.7-win64.exe">
+            <span>Download for Windows</span>
+            <span class="button-icon" aria-hidden="true">↓</span>
           </a>
-          <div class="hero-secondary">
-            <span>or</span>
-            <a class="text-link" href="#releases">See what’s new <span aria-hidden="true">↓</span></a>
-          </div>
+          <a class="button button-quiet" href="explore/">
+            Explore the workspace
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="hero-meta" aria-label="Product details">
+          <span>Windows 10 / 11</span>
+          <span class="meta-divider" aria-hidden="true"></span>
+          <span>x64 installer</span>
+          <span class="meta-divider" aria-hidden="true"></span>
+          <span id="hero-version">Latest v2.1.7</span>
         </div>
       </div>
 
-      <div id="product" class="preview wide-container">
-        <div class="preview-topbar" aria-hidden="true"><span></span><span></span><span></span><i>VOIDTOOLS / DASHBOARD</i></div>
-        <img src="voidtools-dashboard.png" alt="VoidTools dashboard with system charts and available modules" width="1586" height="992" />
+      <div class="product-frame">
+        <div class="product-bar">
+          <div class="window-controls">
+            <button class="window-control-close" type="button" aria-label="Activate hidden Void mode"></button>
+            <i aria-hidden="true"></i><i aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="product-screen">
+          <img src="https://voidtools.software/voidtools-dashboard.png" alt="VoidTools dashboard showing system information and available modules" width="1586" height="992" />
+          <div class="screen-fallback" aria-hidden="true">
+            <div class="fallback-sidebar"></div>
+            <div class="fallback-content">
+              <i></i><i></i><i></i>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="principles container" aria-labelledby="principles-title">
-      <div class="section-label">01 — The workspace</div>
-      <div class="principles-heading">
-        <h2 id="principles-title">Designed to stay<br />out of your way.</h2>
-        <p>VoidTools keeps useful utilities together in a consistent, low-noise interface — so you can get in, do the work, and move on.</p>
-      </div>
-      <div class="feature-grid">
-        <article>
-          <span class="feature-number">01</span>
-          <h3>System tools</h3>
-          <p>Maintenance, optimization and recovery utilities collected in one place.</p>
-        </article>
-        <article>
-          <span class="feature-number">02</span>
-          <h3>Clear diagnostics</h3>
-          <p>Live system and network information without distracting visual noise.</p>
-        </article>
-        <article>
-          <span class="feature-number">03</span>
-          <h3>Technical workflow</h3>
-          <p>Focused tools for code, scripts and everyday technical tasks.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="releases" class="releases-section" aria-labelledby="releases-title">
-      <div class="container">
-        <div class="releases-header">
+    <section id="workspace" class="workspace-section section-panel">
+      <div class="shell">
+        <div class="section-heading">
           <div>
-            <div class="section-label">02 — Release history</div>
-            <h2 id="releases-title">What’s changed.</h2>
+            <span class="section-index">01 / Workspace</span>
+            <h2>Everything useful.<br />Nothing in the way.</h2>
           </div>
-          <p>Every published build appears here automatically.</p>
+          <p>One consistent interface replaces scattered scripts, settings panels and one-off utilities.</p>
         </div>
-        <div class="release-timeline-shell">
-          <div id="release-timeline" class="release-timeline" aria-live="polite" aria-label="Release history" tabindex="0">
-            <p class="timeline-loading">Loading release history…</p>
-          </div>
+
+        <div class="feature-list">
+          <article class="feature">
+            <span class="feature-number">01</span>
+            <div class="feature-icon" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>System control</h3>
+            <p>Maintenance, optimization and recovery tools kept close and clearly organized.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-number">02</span>
+            <div class="feature-icon feature-icon-signal" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>Live diagnostics</h3>
+            <p>Useful system and network context at a glance, without visual noise.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-number">03</span>
+            <div class="feature-icon feature-icon-code" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>Technical workflow</h3>
+            <p>Focused tools for code, scripts and everyday technical work in one place.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="download" class="download-section container" aria-labelledby="download-title">
-      <div>
-        <div class="section-label">03 — Download</div>
-        <h2 id="download-title">Ready when<br />you are.</h2>
-        <p>Get the latest stable VoidTools installer for Windows x64. Existing installations can update through the in-app updater.</p>
+    <section id="releases" class="releases-section shell">
+      <div class="section-heading">
+        <div>
+          <span class="section-index">02 / Releases</span>
+          <h2>Quietly getting<br />better.</h2>
+        </div>
+        <p>Recent stable builds, fetched from the same release channel used by the app.</p>
       </div>
-      <div class="release-card">
-        <strong id="download-status-title">Latest release</strong>
-        <p id="download-status-copy">Loading the latest installer details…</p>
-        <a id="download-button-secondary" class="button button-full" href="https://github.com/LordSniper007/LordSniper007.github.io/releases/latest" download>
-          <span>Download installer</span><span aria-hidden="true">↓</span>
-        </a>
+
+      <div class="release-window">
+        <div class="release-window-bar">
+          <div class="window-controls">
+            <button class="window-control-close" type="button" aria-label="Activate hidden Void mode"></button>
+            <i aria-hidden="true"></i><i aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div id="release-list" class="release-list" aria-live="polite" aria-busy="true" aria-label="Release history" tabindex="0">
+          <article class="release-row is-latest">
+            <div class="release-version"><span>Latest</span><strong>v2.1.7</strong></div>
+            <time datetime="2026-07-29">Jul 29, 2026</time>
+            <p>Fixed VoidLock</p>
+          </article>
+          <article class="release-row">
+            <div class="release-version"><strong>v2.1.6</strong></div>
+            <time datetime="2026-07-29">Jul 29, 2026</time>
+            <p>Added VoidLock · Added VoidLauncher · Added VoidNotes · Added Vlipboard · Added VoidWatch · Added VoidClean · Added VoidRPC</p>
+          </article>
+          <article class="release-row">
+            <div class="release-version"><strong>v2.1.5</strong></div>
+            <time datetime="2026-07-28">Jul 28, 2026</time>
+            <p>Fixed Windows Optimizer · Better Osint Tool · Fixed Tor Tunnelling</p>
+          </article>
+        </div>
+
       </div>
     </section>
 
+    <section id="discover" class="discover-section">
+      <div class="shell discover-inner">
+        <div class="discover-window">
+          <div class="discover-heading">
+            <span class="section-index">03 / Explore</span>
+            <h2>Discover more<br /><span>features.</span></h2>
+          </div>
+          <div class="discover-side">
+            <p>Go beyond the essentials. Explore the full VoidTools workspace for system care, local workflows, networking and creation.</p>
+            <a class="button button-primary discover-button" href="explore/">
+              <span>Explore VoidTools</span>
+              <span class="button-icon" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-copy">
-        <p>Built for a clearer Windows workspace.</p>
-        <p>Created by <strong>kixo_oio</strong> · <a class="footer-contact" href="https://discord.gg/wDz9Dw63A5" rel="noopener noreferrer">Official Discord</a>.</p>
-        <span>© <span id="year"></span> VoidTools</span>
+    <div class="shell footer-inner">
+      <a class="brand brand-muted" href="#top">
+        <span>VoidTools</span>
+      </a>
+      <p>Built for a clearer Windows workspace.</p>
+      <div class="footer-links">
+        <a href="explore/">Explore</a>
+        <a href="terms/">Terms</a>
+        <a href="privacy/">Privacy</a>
+        <span>© <span id="year"></span></span>
       </div>
-      <nav class="footer-legal" aria-label="Legal">
-        <a href="terms/">Terms of Service</a>
-        <a href="privacy/">Privacy Policy</a>
-      </nav>
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js?v=beta-download-1" defer></script>
 </body>
 </html>

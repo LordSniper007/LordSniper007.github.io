@@ -3,111 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#090a0f" />
-  <meta name="description" content="Explore the complete VoidTools workspace for Windows maintenance, diagnostics, automation and Lua development." />
-  <link rel="canonical" href="https://voidtools.software/explore/" />
+  <meta name="theme-color" content="#090a0d" />
+  <meta name="description" content="Explore the VoidTools workspace for Windows maintenance, diagnostics, automation and Lua development." />
   <title>Explore VoidTools</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../styles.css?v=beta-20260730-12" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
+  <canvas id="dot-field" class="dot-field" aria-hidden="true"></canvas>
+  <div class="page-glow" aria-hidden="true"></div>
 
-  <main id="main-content" class="explore-page explore-page-v2">
-    <section class="container explore-hero">
-      <nav class="explore-nav" aria-label="Explore navigation">
-        <a class="text-link" href="../"><span aria-hidden="true">←</span> Home</a>
-        <span class="explore-nav-mark">VOIDTOOLS // EXPLORE</span>
-      </nav>
+  <header class="site-header">
+    <nav class="navigation shell" aria-label="Main navigation">
+      <a class="brand" href="../" aria-label="VoidTools home"><span>VoidTools</span></a>
+      <div class="nav-links">
+        <a href="../">Home</a>
+        <a href="./" aria-current="page">Explore</a>
+        <a href="https://discord.gg/wDz9Dw63A5" target="_blank" rel="noopener noreferrer">Community</a>
+      </div>
+      <a class="nav-download js-latest-download" href="https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.7/VoidTools-Setup-v2.1.7-win64.exe">
+        <span>Get the app</span>
+        <span aria-hidden="true">↘</span>
+      </a>
+    </nav>
+  </header>
 
-      <div class="explore-hero-grid">
-        <div class="explore-hero-copy">
-          <p class="section-label">One focused workspace</p>
-          <h1>More control.<br /><span>Less searching.</span></h1>
-          <p class="explore-lead">Maintenance, diagnostics, automation and Lua tooling — organised into one calm Windows workspace.</p>
-          <div class="explore-actions">
-            <a class="text-link" href="#toolkit">Explore the toolkit <span aria-hidden="true">↓</span></a>
-          </div>
+  <main id="main-content" class="explore-page">
+    <section class="explore-hero shell">
+      <div class="explore-hero-copy">
+        <h1>More control.<br /><span>Less searching.</span></h1>
+        <p>Maintenance, diagnostics, automation and Lua tooling — organised into one calm Windows workspace.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#toolkit">
+            <span>Explore the toolkit</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+          <a class="button button-quiet" href="../">
+            <span>Back to home</span>
+            <span aria-hidden="true">←</span>
+          </a>
         </div>
-
+      </div>
+      <div class="explore-stats" aria-label="Workspace overview">
+        <div><strong>One</strong><span>focused workspace</span></div>
+        <div><strong>Local</strong><span>first workflows</span></div>
+        <div><strong>Clear</strong><span>before execution</span></div>
       </div>
     </section>
 
-    <section class="container explore-feature" aria-labelledby="featured-title">
-      <div class="explore-feature-main">
-        <p class="section-label">Featured workflow / Lua</p>
-        <h2 id="featured-title">From source<br />to protected build.</h2>
+    <section class="explore-feature shell" aria-labelledby="workflow-title">
+      <div class="workflow-copy">
+        <span class="section-index">Featured workflow / Lua</span>
+        <h2 id="workflow-title">From source<br />to protected build.</h2>
         <p>Bring Lua or Luau source into a focused local workflow. Choose a target, configure the stages, review diagnostics and export the result.</p>
       </div>
-      <div class="explore-feature-steps">
-        <article><span>01</span><div><strong>Bring your source</strong><p>Paste code or open an existing Lua file.</p></div></article>
-        <article><span>02</span><div><strong>Shape the pipeline</strong><p>Select a compatible target and protection stages.</p></div></article>
-        <article><span>03</span><div><strong>Review and export</strong><p>Check diagnostics before saving the protected build.</p></div></article>
+      <div class="workflow-steps">
+        <article>
+          <span>01</span>
+          <div><strong>Bring your source</strong><p>Paste code or open an existing Lua file.</p></div>
+        </article>
+        <article>
+          <span>02</span>
+          <div><strong>Shape the pipeline</strong><p>Select a compatible target and protection stages.</p></div>
+        </article>
+        <article>
+          <span>03</span>
+          <div><strong>Review and export</strong><p>Check diagnostics before saving the protected build.</p></div>
+        </article>
       </div>
     </section>
 
-    <section id="toolkit" class="container explore-toolkit" aria-labelledby="toolkit-title">
-      <div class="explore-toolkit-heading">
-        <div>
-          <p class="section-label">The complete toolkit</p>
-          <h2 id="toolkit-title">Pick the job.<br />Open the right space.</h2>
+    <section id="toolkit" class="toolkit-section section-panel">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <span class="section-index">The complete toolkit</span>
+            <h2>Pick the job.<br />Open the right space.</h2>
+          </div>
+          <p>Related actions stay together, so the interface remains readable even as the toolbox grows.</p>
         </div>
-        <p>VoidTools groups related actions together, so the interface stays readable even when the toolbox grows.</p>
+
+        <div class="tool-clusters">
+          <section class="tool-cluster">
+            <header>
+              <span>01</span>
+              <div><small>System</small><h3>Keep Windows in shape.</h3></div>
+            </header>
+            <div class="tool-items">
+              <article><strong>Windows Optimizer</strong><p>Maintenance, performance, privacy, network and debloat actions with review before execution.</p><small>Optimise</small></article>
+              <article><strong>Health &amp; Repair</strong><p>Guided health checks and focused repair workflows for your own Windows installation.</p><small>Diagnose</small></article>
+              <article><strong>System Backup</strong><p>Create named snapshots and restore points when you need a safer way back.</p><small>Restore</small></article>
+          </div>
+          </section>
+
+          <section class="tool-cluster">
+            <header>
+              <span>02</span>
+              <div><small>Developer</small><h3>Work with Lua locally.</h3></div>
+            </header>
+            <div class="tool-items tool-items-two">
+              <article><strong>Lua Obfuscator</strong><p>Configure targets and transformation stages, then compile and export from one workspace.</p><small>Protect</small></article>
+              <article><strong>Lua Deobfuscator</strong><p>Run local analysis, compare transformed output and export a more readable file.</p><small>Analyse</small></article>
+            </div>
+          </section>
+
+          <section class="tool-cluster">
+            <header>
+              <span>03</span>
+              <div><small>Utility</small><h3>Understand and automate.</h3></div>
+            </header>
+            <div class="tool-items">
+              <article><strong>Network Utilities</strong><p>Connection diagnostics, GeoIP information and privacy checks for your own setup.</p><small>Inspect</small></article>
+              <article><strong>Website Scan</strong><p>Build local reports for websites you own or are authorised to assess.</p><small>Review</small></article>
+              <article><strong>Desktop Automation</strong><p>Macros, hotkeys and lightweight helpers for repetitive everyday work.</p><small>Automate</small></article>
+            </div>
+          </section>
+        </div>
+
+        <p class="toolkit-more"><span aria-hidden="true">＋</span> And much more inside the app.</p>
       </div>
-
-      <div class="tool-clusters">
-        <section class="tool-cluster">
-          <header><span>01</span><div><p>System</p><h3>Keep Windows in shape.</h3></div></header>
-          <div class="tool-cluster-items">
-            <article><strong>Windows Optimizer</strong><p>Maintenance, performance, privacy, network and debloat actions with review before execution.</p><small>OPTIMISE</small></article>
-            <article><strong>Health &amp; Repair</strong><p>Guided health checks and focused repair workflows for your own Windows installation.</p><small>DIAGNOSE</small></article>
-            <article><strong>System Backup</strong><p>Create named snapshots and restore points when you need a safer way back.</p><small>RESTORE</small></article>
-          </div>
-        </section>
-
-        <section class="tool-cluster">
-          <header><span>02</span><div><p>Developer</p><h3>Work with Lua locally.</h3></div></header>
-          <div class="tool-cluster-items">
-            <article><strong>Lua Obfuscator</strong><p>Configure targets and transformation stages, then compile and export from one workspace.</p><small>PROTECT</small></article>
-            <article><strong>Lua Deobfuscator</strong><p>Run local analysis, compare transformed output and export a more readable file.</p><small>ANALYSE</small></article>
-          </div>
-        </section>
-
-        <section class="tool-cluster">
-          <header><span>03</span><div><p>Utility</p><h3>Understand and automate.</h3></div></header>
-          <div class="tool-cluster-items">
-            <article><strong>Network Utilities</strong><p>Connection diagnostics, GeoIP information and privacy checks for your own setup.</p><small>INSPECT</small></article>
-            <article><strong>Website Scan</strong><p>Build local reports for websites you own or are authorised to assess.</p><small>REVIEW</small></article>
-            <article><strong>Desktop Automation</strong><p>Macros, hotkeys and lightweight helpers for repetitive everyday work.</p><small>AUTOMATE</small></article>
-          </div>
-        </section>
-      </div>
-      <p class="toolkit-more"><span aria-hidden="true">＋</span> And much more.</p>
     </section>
 
-    <section class="container explore-end explore-end-v2">
-      <p class="section-label">Ready when you are</p>
+    <section class="explore-end shell">
+      <span class="section-index">Ready when you are</span>
       <h2>Make your Windows workspace<br /><span>feel focused again.</span></h2>
-      <a class="button" href="../#download"><span>Get VoidTools</span><span aria-hidden="true">↓</span></a>
+      <a class="button button-primary js-latest-download" href="https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.7/VoidTools-Setup-v2.1.7-win64.exe">
+        <span>Get VoidTools</span>
+        <span aria-hidden="true">↓</span>
+      </a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-copy">
-        <p>Built for a clearer Windows workspace.</p>
-        <p>Created by <strong>kixo_oio</strong> · <a class="footer-contact" href="https://discord.gg/wDz9Dw63A5" rel="noopener noreferrer">Official Discord</a>.</p>
-        <span>© <span id="year"></span> VoidTools</span>
+    <div class="shell footer-inner">
+      <a class="brand brand-muted" href="../"><span>VoidTools</span></a>
+      <p>Built for a clearer Windows workspace.</p>
+      <div class="footer-links">
+        <a href="../terms/">Terms</a>
+        <a href="../privacy/">Privacy</a>
+        <span>© <span id="year"></span></span>
       </div>
-      <nav class="footer-legal" aria-label="Legal">
-        <a href="../terms/">Terms of Service</a>
-        <a href="../privacy/">Privacy Policy</a>
-      </nav>
     </div>
   </footer>
-  <script src="../script.js" defer></script>
+
+  <script src="../script.js?v=beta-download-1" defer></script>
 </body>
 </html>
