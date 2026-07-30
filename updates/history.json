@@ -2,6 +2,13 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.1.8",
+                         "publishedAt":  "2026-07-30T16:42:15Z",
+                         "notes":  [
+                                       "Added Discord login"
+                                   ]
+                     },
+                     {
                          "version":  "2.1.7",
                          "publishedAt":  "2026-07-29T20:10:09Z",
                          "notes":  [

@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.1.7",
-    "publishedAt":  "2026-07-29T20:10:09Z",
+    "version":  "2.1.8",
+    "publishedAt":  "2026-07-30T16:42:15Z",
     "mandatory":  false,
     "notes":  [
-                  "Fixed VoidLock"
+                  "Added Discord login"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.7/VoidTools-Setup-v2.1.7-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.1.7-win64.exe",
-                      "size":  18819556,
-                      "sha256":  "16ec2814aada6728a33e00c58d4f1e93c0de3566a01d50e2496da02452d343de"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.8/VoidTools-Setup-v2.1.8-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.1.8-win64.exe",
+                      "size":  18820393,
+                      "sha256":  "9d7fb5a716b92eb0584f9c27d26a3714445f8fc2701994e9747519d5ee06185d"
                   }
 }
