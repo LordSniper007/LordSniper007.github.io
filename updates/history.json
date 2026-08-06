@@ -2,6 +2,17 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.1.9",
+                         "publishedAt":  "2026-08-06T11:28:42Z",
+                         "notes":  [
+                                       "Rework VoidG",
+                                       "Fixed Gui",
+                                       "Added Person Linking in Osint Tool",
+                                       "Fixed VoidInjector",
+                                       "Small Stuff"
+                                   ]
+                     },
+                     {
                          "version":  "2.1.8",
                          "publishedAt":  "2026-07-30T16:42:15Z",
                          "notes":  [
