@@ -2,6 +2,19 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.2.0",
+                         "publishedAt":  "2026-08-14T15:54:02Z",
+                         "notes":  [
+                                       "Fixed Broked Osint Tool",
+                                       "Gui fixes",
+                                       "Added Fake Identify",
+                                       "Added CC Validator/Generator",
+                                       "Added Discord Token Login",
+                                       "Small Fixes in VoidInjector",
+                                       "Fixed Clerk Timeout at random"
+                                   ]
+                     },
+                     {
                          "version":  "2.1.9",
                          "publishedAt":  "2026-08-06T11:28:42Z",
                          "notes":  [
