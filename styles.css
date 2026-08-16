@@ -912,54 +912,6 @@ a {
   line-height: 1.75;
 }
 
-.support-promise {
-  display: grid;
-  min-height: 86px;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 28px;
-  margin-top: 90px;
-  padding-inline: 28px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: rgba(15, 17, 22, .72);
-}
-
-.support-promise > div {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  color: #858b96;
-  font-family: "DM Mono", monospace;
-  font-size: 8px;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-
-.support-status {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 14px rgba(87, 219, 150, .6);
-}
-
-.support-promise strong {
-  font-size: 13px;
-}
-
-.support-promise > a {
-  justify-self: end;
-  color: #bbc0c9;
-  font-size: 11px;
-  font-weight: 700;
-  transition: color .2s ease;
-}
-
-.support-promise > a:hover {
-  color: #fff;
-}
-
 .mobile-cta {
   display: none;
 }
@@ -1739,16 +1691,6 @@ a {
     max-width: 500px;
   }
 
-  .support-promise {
-    grid-template-columns: 1fr auto;
-  }
-
-  .support-promise strong {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    padding-bottom: 22px;
-  }
-
   .explore-feature {
     grid-template-columns: 1fr;
   }
@@ -1932,25 +1874,6 @@ a {
 
   .faq-list details p {
     margin-right: 28px;
-  }
-
-  .support-promise {
-    min-height: 0;
-    grid-template-columns: 1fr;
-    gap: 13px;
-    margin-top: 64px;
-    padding: 23px;
-  }
-
-  .support-promise strong {
-    grid-column: auto;
-    grid-row: auto;
-    padding: 0;
-  }
-
-  .support-promise > a {
-    justify-self: start;
-    margin-top: 5px;
   }
 
   .mobile-cta {

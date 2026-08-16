@@ -428,7 +428,7 @@
   }
 
   function startRevealAnimations() {
-    const sections = document.querySelectorAll('.section-heading, .feature-list, .release-list, .faq-layout, .support-promise, .explore-hero-copy, .explore-feature, .tool-cluster, .explore-end')
+    const sections = document.querySelectorAll('.section-heading, .feature-list, .release-list, .faq-layout, .explore-hero-copy, .explore-feature, .tool-cluster, .explore-end')
     if (reduceMotion.matches || !('IntersectionObserver' in window)) return
 
     sections.forEach(section => section.classList.add('reveal'))
