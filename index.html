@@ -11,13 +11,82 @@
   <meta property="og:url" content="https://voidtools.software/" />
   <meta property="og:image" content="https://voidtools.software/voidtools-dashboard.png" />
   <title>VoidTools — Your system, fully yours.</title>
+  <link rel="canonical" href="https://voidtools.software/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=beta-20260730-12" />
+  <link rel="preload" as="image" href="voidtools-dashboard.png" fetchpriority="high" />
+  <link rel="stylesheet" href="styles.css?v=20260816-1" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://voidtools.software/#business",
+          "name": "VoidTools",
+          "url": "https://voidtools.software/",
+          "image": "https://voidtools.software/voidtools-dashboard.png",
+          "description": "Windows software for maintenance, diagnostics, Lua development and focused technical workflows.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": "https://discord.gg/wDz9Dw63A5",
+            "availableLanguage": "English"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://voidtools.software/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is VoidTools?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "VoidTools is a focused Windows workspace that brings maintenance, diagnostics, Lua tooling and everyday technical utilities into one application."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which versions of Windows does VoidTools support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "VoidTools provides a 64-bit installer for Windows 10 and Windows 11."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does the Lua Obfuscator do?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Lua Obfuscator lets you bring in Lua or Luau source, configure compatible transformation stages, review diagnostics and export a protected build."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does VoidTools store workspace data online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "VoidTools does not operate a central database for workspace files, reports or tool inputs. Working data is generally stored locally unless you choose a feature that contacts an external service."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get help with VoidTools?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Contact the VoidTools team through the official Discord. We aim to send an initial response within 24 hours."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
-<body>
+<body class="has-mobile-cta">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <canvas id="dot-field" class="dot-field" aria-hidden="true"></canvas>
   <div class="page-glow" aria-hidden="true"></div>
@@ -27,17 +96,20 @@
       <a class="brand" href="#top" aria-label="VoidTools home">
         <span>VoidTools</span>
       </a>
-
-      <div class="nav-links">
-        <a href="explore/">Explore</a>
-        <a href="#releases">Releases</a>
-        <a href="https://discord.gg/wDz9Dw63A5" target="_blank" rel="noopener noreferrer">Community</a>
+      <div class="nav-actions">
+        <div class="nav-links" id="site-menu">
+          <a href="explore/">Explore</a>
+          <a href="#releases">Releases</a>
+          <a href="https://discord.gg/wDz9Dw63A5" target="_blank" rel="noopener noreferrer">Community</a>
+          <a class="nav-download js-latest-download" data-download-page="thank-you/" href="thank-you/">
+            <span>Get the app</span>
+            <span aria-hidden="true">↘</span>
+          </a>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
       </div>
-
-      <a class="nav-download js-latest-download" href="https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.7/VoidTools-Setup-v2.1.7-win64.exe">
-        <span>Get the app</span>
-        <span aria-hidden="true">↘</span>
-      </a>
     </nav>
   </header>
 
@@ -48,7 +120,7 @@
         <p>Diagnostics, maintenance and focused technical tools in one calm workspace — without the clutter.</p>
 
         <div class="hero-actions">
-          <a id="download-button" class="button button-primary js-latest-download" href="https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.7/VoidTools-Setup-v2.1.7-win64.exe">
+          <a id="download-button" class="button button-primary js-latest-download" data-download-page="thank-you/" href="thank-you/">
             <span>Download for Windows</span>
             <span class="button-icon" aria-hidden="true">↓</span>
           </a>
@@ -63,19 +135,18 @@
           <span class="meta-divider" aria-hidden="true"></span>
           <span>x64 installer</span>
           <span class="meta-divider" aria-hidden="true"></span>
-          <span id="hero-version">Latest v2.1.7</span>
+          <span id="hero-version">Latest v2.2.0</span>
         </div>
       </div>
 
       <div class="product-frame">
         <div class="product-bar">
           <div class="window-controls">
-            <button class="window-control-close" type="button" aria-label="Activate hidden Void mode"></button>
-            <i aria-hidden="true"></i><i aria-hidden="true"></i>
+            <i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
           </div>
         </div>
         <div class="product-screen">
-          <img src="https://voidtools.software/voidtools-dashboard.png" alt="VoidTools dashboard showing system information and available modules" width="1586" height="992" />
+          <img src="voidtools-dashboard.png" alt="VoidTools dashboard showing system information and available modules" width="1586" height="992" fetchpriority="high" decoding="async" />
           <div class="screen-fallback" aria-hidden="true">
             <div class="fallback-sidebar"></div>
             <div class="fallback-content">
@@ -131,26 +202,25 @@
       <div class="release-window">
         <div class="release-window-bar">
           <div class="window-controls">
-            <button class="window-control-close" type="button" aria-label="Activate hidden Void mode"></button>
-            <i aria-hidden="true"></i><i aria-hidden="true"></i>
+            <i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
           </div>
         </div>
 
         <div id="release-list" class="release-list" aria-live="polite" aria-busy="true" aria-label="Release history" tabindex="0">
           <article class="release-row is-latest">
-            <div class="release-version"><span>Latest</span><strong>v2.1.7</strong></div>
-            <time datetime="2026-07-29">Jul 29, 2026</time>
-            <p>Fixed VoidLock</p>
+            <div class="release-version"><span>Latest</span><strong>v2.2.0</strong></div>
+            <time datetime="2026-08-14">Aug 14, 2026</time>
+            <p>Fixed OSINT tool · GUI fixes · Added Fake Identify · Added CC Validator/Generator</p>
           </article>
           <article class="release-row">
-            <div class="release-version"><strong>v2.1.6</strong></div>
-            <time datetime="2026-07-29">Jul 29, 2026</time>
-            <p>Added VoidLock · Added VoidLauncher · Added VoidNotes · Added Vlipboard · Added VoidWatch · Added VoidClean · Added VoidRPC</p>
+            <div class="release-version"><strong>v2.1.9</strong></div>
+            <time datetime="2026-08-06">Aug 6, 2026</time>
+            <p>Rework VoidG · Fixed GUI · Added person linking in OSINT tool · Fixed VoidInjector</p>
           </article>
           <article class="release-row">
-            <div class="release-version"><strong>v2.1.5</strong></div>
-            <time datetime="2026-07-28">Jul 28, 2026</time>
-            <p>Fixed Windows Optimizer · Better Osint Tool · Fixed Tor Tunnelling</p>
+            <div class="release-version"><strong>v2.1.8</strong></div>
+            <time datetime="2026-07-30">Jul 30, 2026</time>
+            <p>Added Discord login</p>
           </article>
         </div>
 
@@ -161,20 +231,72 @@
       <div class="shell discover-inner">
         <div class="discover-window">
           <div class="discover-heading">
-            <span class="section-index">03 / Explore</span>
-            <h2>Discover more<br /><span>features.</span></h2>
+            <span class="section-index">03 / The toolkit</span>
+            <h2>See what VoidTools<br /><span>can do.</span></h2>
           </div>
           <div class="discover-side">
-            <p>Go beyond the essentials. Explore the full VoidTools workspace for system care, local workflows, networking and creation.</p>
-            <a class="button button-primary discover-button" href="explore/">
-              <span>Explore VoidTools</span>
-              <span class="button-icon" aria-hidden="true">↗</span>
+            <p>One workspace for focused Windows maintenance and technical work. Start with the tools people use most:</p>
+            <ul class="discover-features">
+              <li><strong>Lua Obfuscator</strong><span>Protect and export Lua or Luau builds.</span></li>
+              <li><strong>Windows Optimizer</strong><span>Review maintenance, performance and privacy actions.</span></li>
+              <li><strong>Health &amp; Repair</strong><span>Diagnose issues and run guided repair workflows.</span></li>
+            </ul>
+            <a class="discover-link" href="explore/">
+              <span>See all VoidTools features</span>
+              <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="faq" class="faq-section section-panel" aria-labelledby="faq-title">
+      <div class="shell faq-layout">
+        <div class="faq-heading">
+          <span class="section-index">04 / FAQ</span>
+          <h2 id="faq-title">Before you<br /><span>get started.</span></h2>
+          <p>Clear answers about compatibility, local data, Lua workflows and support.</p>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary><span>What is VoidTools?</span><span aria-hidden="true">＋</span></summary>
+            <p>VoidTools is a focused Windows workspace that brings maintenance, diagnostics, Lua tooling and everyday technical utilities into one application.</p>
+          </details>
+          <details>
+            <summary><span>Which versions of Windows are supported?</span><span aria-hidden="true">＋</span></summary>
+            <p>VoidTools provides a 64-bit installer for Windows 10 and Windows 11.</p>
+          </details>
+          <details>
+            <summary><span>What does the Lua Obfuscator do?</span><span aria-hidden="true">＋</span></summary>
+            <p>Bring in Lua or Luau source, configure compatible transformation stages, review diagnostics and export a protected build from one workflow.</p>
+          </details>
+          <details>
+            <summary><span>Does VoidTools store my workspace data online?</span><span aria-hidden="true">＋</span></summary>
+            <p>VoidTools has no central database for workspace files, reports or tool inputs. Working data generally stays local unless you choose a feature that contacts an external service.</p>
+          </details>
+          <details>
+            <summary><span>How do I get help?</span><span aria-hidden="true">＋</span></summary>
+            <p>Contact the team through the official VoidTools Discord. We aim to send an initial response within 24 hours.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="shell support-promise">
+        <div>
+          <span class="support-status" aria-hidden="true"></span>
+          <span>Support response promise</span>
+        </div>
+        <strong>Initial response within 24 hours</strong>
+        <a href="https://discord.gg/wDz9Dw63A5" target="_blank" rel="noopener noreferrer">Open Discord <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
   </main>
+
+  <aside class="mobile-cta" aria-label="Download VoidTools">
+    <div><strong>VoidTools</strong><span>Windows 10 / 11</span></div>
+    <a class="js-latest-download" data-download-page="thank-you/" href="thank-you/"><span>Get the app</span><span aria-hidden="true">↓</span></a>
+  </aside>
 
   <footer class="site-footer">
     <div class="shell footer-inner">
@@ -184,6 +306,7 @@
       <p>Built for a clearer Windows workspace.</p>
       <div class="footer-links">
         <a href="explore/">Explore</a>
+        <a href="#faq">FAQ</a>
         <a href="terms/">Terms</a>
         <a href="privacy/">Privacy</a>
         <span>© <span id="year"></span></span>
@@ -191,6 +314,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=beta-download-1" defer></script>
+  <script src="script.js?v=header-glass-1" defer></script>
 </body>
 </html>

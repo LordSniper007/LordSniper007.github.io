@@ -7,11 +7,106 @@
     'https://raw.githubusercontent.com/LordSniper007/LordSniper007.github.io/main/updates/history.json',
     'https://voidtools.software/updates/history.json'
   ]
-  const RELEASE_FALLBACK = 'https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.1.7/VoidTools-Setup-v2.1.7-win64.exe'
+  const RELEASE_FALLBACK = 'https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.2.0/VoidTools-Setup-v2.2.0-win64.exe'
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+
+  const siteHeader = document.querySelector('.site-header')
+  const navToggle = document.querySelector('.nav-toggle')
+  const navMenu = document.querySelector('#site-menu')
+
+  function closeNavigation() {
+    if (!siteHeader || !navToggle) return
+    siteHeader.classList.remove('is-menu-open')
+    navToggle.setAttribute('aria-expanded', 'false')
+    navToggle.setAttribute('aria-label', 'Open navigation')
+    document.body.classList.remove('menu-open')
+  }
+
+  navToggle?.addEventListener('click', () => {
+    const isOpen = navToggle.getAttribute('aria-expanded') === 'true'
+    navToggle.setAttribute('aria-expanded', String(!isOpen))
+    navToggle.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation')
+    siteHeader?.classList.toggle('is-menu-open', !isOpen)
+    document.body.classList.toggle('menu-open', !isOpen)
+  })
+
+  navMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNavigation))
+
+  let headerFrame = 0
+  let navProgress = 0
+  let navTarget = 0
+
+  function readNavTarget() {
+    return Math.min(1, Math.max(0, (window.scrollY - 10) / 130))
+  }
+
+  function renderHeader(progress) {
+    if (!siteHeader) return
+    siteHeader.style.setProperty('--nav-p', progress.toFixed(4))
+    siteHeader.classList.toggle('is-scrolled', progress > .02)
+  }
+
+  function tickHeader() {
+    headerFrame = 0
+    navTarget = readNavTarget()
+
+    if (reduceMotion.matches) {
+      navProgress = navTarget
+      renderHeader(navProgress)
+      return
+    }
+
+    navProgress += (navTarget - navProgress) * .2
+    if (Math.abs(navTarget - navProgress) < .001) navProgress = navTarget
+    renderHeader(navProgress)
+    if (navProgress !== navTarget) headerFrame = window.requestAnimationFrame(tickHeader)
+  }
+
+  function queueHeaderUpdate() {
+    if (headerFrame) return
+    headerFrame = window.requestAnimationFrame(tickHeader)
+  }
+
+  navProgress = readNavTarget()
+  renderHeader(navProgress)
+  window.addEventListener('scroll', queueHeaderUpdate, { passive: true })
+  window.addEventListener('resize', queueHeaderUpdate, { passive: true })
 
   const year = document.querySelector('#year')
   if (year) year.textContent = new Date().getFullYear()
+
+  function isOfficialDownload(value) {
+    try {
+      const url = new URL(value)
+      return url.protocol === 'https:' &&
+        url.hostname === 'github.com' &&
+        url.pathname.startsWith('/LordSniper007/LordSniper007.github.io/releases/download/')
+    } catch {
+      return false
+    }
+  }
+
+  const requestedDownload = new URLSearchParams(window.location.search).get('download')
+  if (requestedDownload && isOfficialDownload(requestedDownload)) {
+    for (const link of document.querySelectorAll('.js-download-file')) {
+      link.href = requestedDownload
+    }
+  }
+
+  function startAutomaticDownload() {
+    const autoDownload = document.querySelector('.js-auto-download')
+    if (!autoDownload || document.body.classList.contains('thanks-page') === false) return
+
+    const downloadKey = `voidtools-download:${autoDownload.href}`
+    if (sessionStorage.getItem(downloadKey)) return
+
+    sessionStorage.setItem(downloadKey, 'started')
+    window.setTimeout(() => autoDownload.click(), 450)
+  }
+
+  if (requestedDownload && isOfficialDownload(requestedDownload)) {
+    startAutomaticDownload()
+  }
 
   class InteractiveDotField {
     constructor(canvas) {
@@ -217,63 +312,6 @@
   const canvas = document.querySelector('#dot-field')
   const dotField = canvas ? new InteractiveDotField(canvas) : null
 
-  function activateVoidEasterEgg(event) {
-    if (document.body.dataset.voidActive === 'true') return
-
-    const trigger = event.currentTarget
-    const origin = trigger.getBoundingClientRect()
-    const originX = origin.left + origin.width / 2
-    const originY = origin.top + origin.height / 2
-    const sourceWindow = trigger.closest('.product-frame, .release-window')
-
-    document.body.dataset.voidActive = 'true'
-    document.body.classList.add('void-awake')
-    sourceWindow?.classList.add('is-void-pulsing')
-
-    const overlay = document.createElement('div')
-    overlay.className = 'void-easter-egg'
-    overlay.setAttribute('role', 'status')
-    overlay.setAttribute('aria-live', 'polite')
-    overlay.style.setProperty('--void-x', `${originX}px`)
-    overlay.style.setProperty('--void-y', `${originY}px`)
-
-    const message = document.createElement('div')
-    message.className = 'void-message'
-
-    const sigil = document.createElement('div')
-    sigil.className = 'void-sigil'
-    sigil.setAttribute('aria-hidden', 'true')
-
-    const label = document.createElement('span')
-    label.textContent = 'VOID MODE // 000'
-
-    const title = document.createElement('h2')
-    title.textContent = 'You found the Void.'
-
-    const note = document.createElement('p')
-    note.textContent = 'Nothing really closes here.'
-
-    message.append(sigil, label, title, note)
-    overlay.append(message)
-    document.body.append(overlay)
-
-    dotField?.addWave(originX, originY, 3.4, 2000)
-    window.setTimeout(() => dotField?.addWave(window.innerWidth / 2, window.innerHeight / 2, 2.6, 1800), 480)
-    window.requestAnimationFrame(() => overlay.classList.add('is-active'))
-
-    window.setTimeout(() => sourceWindow?.classList.remove('is-void-pulsing'), 1200)
-    window.setTimeout(() => overlay.classList.remove('is-active'), 3000)
-    window.setTimeout(() => {
-      overlay.remove()
-      document.body.classList.remove('void-awake')
-      delete document.body.dataset.voidActive
-    }, 3550)
-  }
-
-  document.querySelectorAll('.window-control-close').forEach(control => {
-    control.addEventListener('click', activateVoidEasterEgg)
-  })
-
   function formatDate(value) {
     const date = new Date(value)
     if (Number.isNaN(date.getTime())) return 'Date unavailable'
@@ -327,12 +365,29 @@
     const url = installer.url || RELEASE_FALLBACK
 
     for (const button of document.querySelectorAll('.js-latest-download')) {
-      button.href = url
+      const downloadPage = button.dataset.downloadPage
+      button.href = downloadPage ? `${downloadPage}?download=${encodeURIComponent(url)}` : url
+    }
+
+    for (const button of document.querySelectorAll('.js-download-file')) {
+      if (!requestedDownload) button.href = url
       if (installer.fileName) button.setAttribute('download', installer.fileName)
+    }
+
+    const fileName = document.querySelector('#download-file-name')
+    if (installer.fileName && fileName) fileName.textContent = installer.fileName
+
+    const fileMeta = document.querySelector('#download-file-meta')
+    if (fileMeta) {
+      const size = Number(installer.size)
+      const sizeLabel = Number.isFinite(size) && size > 0 ? ` · ${(size / 1024 / 1024).toFixed(1)} MB` : ''
+      fileMeta.textContent = `Version ${version || '2.2.0'} · Windows x64${sizeLabel}`
     }
 
     const heroVersion = document.querySelector('#hero-version')
     if (version && heroVersion) heroVersion.textContent = `Latest v${version}`
+
+    if (!requestedDownload) startAutomaticDownload()
   }
 
   async function fetchFirstJson(urls) {
@@ -373,7 +428,7 @@
   }
 
   function startRevealAnimations() {
-    const sections = document.querySelectorAll('.section-heading, .feature-list, .release-list, .discover-inner, .explore-hero-copy, .explore-feature, .tool-cluster, .explore-end')
+    const sections = document.querySelectorAll('.section-heading, .feature-list, .release-list, .faq-layout, .support-promise, .explore-hero-copy, .explore-feature, .tool-cluster, .explore-end')
     if (reduceMotion.matches || !('IntersectionObserver' in window)) return
 
     sections.forEach(section => section.classList.add('reveal'))
@@ -388,7 +443,7 @@
     sections.forEach(section => observer.observe(section))
   }
 
-  if (document.querySelector('#release-list, .js-latest-download')) {
+  if (document.querySelector('#release-list, .js-latest-download, .js-download-file')) {
     loadReleaseData()
   }
   startRevealAnimations()
