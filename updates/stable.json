@@ -1,22 +1,21 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.2.0",
-    "publishedAt":  "2026-08-14T15:54:02Z",
+    "version":  "2.2.1",
+    "publishedAt":  "2026-08-24T14:02:15Z",
     "mandatory":  false,
     "notes":  [
-                  "Fixed Broked Osint Tool",
-                  "Gui fixes",
-                  "Added Fake Identify",
-                  "Added CC Validator/Generator",
-                  "Added Discord Token Login",
-                  "Small Fixes in VoidInjector",
-                  "Fixed Clerk Timeout at random"
+                  "New Windows Optimizer",
+                  "New Game Library",
+                  "New TempMail(BETA)",
+                  "New Discord Login Token",
+                  "Little changes in settings",
+                  "General Fixes"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.2.0/VoidTools-Setup-v2.2.0-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.2.0-win64.exe",
-                      "size":  19627087,
-                      "sha256":  "c27cfc50c70a18eb2a406ff64ef9d54ecfaea5bb1f0fd25ca9d67268fc744e4f"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.2.1/VoidTools-Setup-v2.2.1-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.2.1-win64.exe",
+                      "size":  84850310,
+                      "sha256":  "47797ca1274f7cae004d2f130b4fc130e626450b6f459be9cf01625053d1f710"
                   }
 }

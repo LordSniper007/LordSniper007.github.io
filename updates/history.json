@@ -2,6 +2,18 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.2.1",
+                         "publishedAt":  "2026-08-24T14:02:15Z",
+                         "notes":  [
+                                       "New Windows Optimizer",
+                                       "New Game Library",
+                                       "New TempMail(BETA)",
+                                       "New Discord Login Token",
+                                       "Little changes in settings",
+                                       "General Fixes"
+                                   ]
+                     },
+                     {
                          "version":  "2.2.0",
                          "publishedAt":  "2026-08-14T15:54:02Z",
                          "notes":  [
