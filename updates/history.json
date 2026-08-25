@@ -2,6 +2,13 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.2.2",
+                         "publishedAt":  "2026-08-25T16:21:14Z",
+                         "notes":  [
+                                       "FIXED TEMPMAIL"
+                                   ]
+                     },
+                     {
                          "version":  "2.2.1",
                          "publishedAt":  "2026-08-24T14:02:15Z",
                          "notes":  [

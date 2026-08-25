@@ -1,21 +1,16 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.2.1",
-    "publishedAt":  "2026-08-24T14:02:15Z",
+    "version":  "2.2.2",
+    "publishedAt":  "2026-08-25T16:21:14Z",
     "mandatory":  false,
     "notes":  [
-                  "New Windows Optimizer",
-                  "New Game Library",
-                  "New TempMail(BETA)",
-                  "New Discord Login Token",
-                  "Little changes in settings",
-                  "General Fixes"
+                  "FIXED TEMPMAIL"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.2.1/VoidTools-Setup-v2.2.1-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.2.1-win64.exe",
-                      "size":  84850310,
-                      "sha256":  "47797ca1274f7cae004d2f130b4fc130e626450b6f459be9cf01625053d1f710"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.2.2/VoidTools-Setup-v2.2.2-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.2.2-win64.exe",
+                      "size":  84858485,
+                      "sha256":  "d23976522042e914aa88721dcbaac7b3737a76fe4078f69d38781c71121e0d01"
                   }
 }
