@@ -1,16 +1,22 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.2.2",
-    "publishedAt":  "2026-08-25T16:21:14Z",
+    "version":  "2.3.0",
+    "publishedAt":  "2026-09-05T18:51:08Z",
     "mandatory":  false,
     "notes":  [
-                  "FIXED TEMPMAIL"
+                  "New Game library (a LOT of new games)",
+                  "Updated Osint Tool",
+                  "Gambling",
+                  "New VoidStream (new provider)",
+                  "Updated Windows Optimizer",
+                  "Updated Discord Auto Quest",
+                  "Security Improvments"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.2.2/VoidTools-Setup-v2.2.2-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.2.2-win64.exe",
-                      "size":  84858485,
-                      "sha256":  "d23976522042e914aa88721dcbaac7b3737a76fe4078f69d38781c71121e0d01"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.3.0/VoidTools-Setup-v2.3.0-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.3.0-win64.exe",
+                      "size":  87052253,
+                      "sha256":  "fe8847b012b62ac90a2c6760c263fc1774ed8b389fe6d9c42ee22dcd85d31a3d"
                   }
 }
