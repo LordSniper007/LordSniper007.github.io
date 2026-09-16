@@ -2,6 +2,14 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.3.2",
+                         "publishedAt":  "2026-09-16T12:38:48Z",
+                         "notes":  [
+                                       "Fixed Discord Login",
+                                       "Fixed VoidG custom icon"
+                                   ]
+                     },
+                     {
                          "version":  "2.3.1",
                          "publishedAt":  "2026-09-12T08:42:07Z",
                          "notes":  [

@@ -1,20 +1,17 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.3.1",
-    "publishedAt":  "2026-09-12T08:42:07Z",
+    "version":  "2.3.2",
+    "publishedAt":  "2026-09-16T12:38:48Z",
     "mandatory":  false,
     "notes":  [
-                  "new windows optimizer tweaks",
-                  "repaired tempmail",
-                  "discord auto quest update",
-                  "new gambling features",
-                  "REWORKED GAME LIBRARY"
+                  "Fixed Discord Login",
+                  "Fixed VoidG custom icon"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.3.1/VoidTools-Setup-v2.3.1-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.3.1-win64.exe",
-                      "size":  87946033,
-                      "sha256":  "bfed49f602107675fa45a0cf917448a8de637a7692bb5a77301b41e5066404ed"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.3.2/VoidTools-Setup-v2.3.2-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.3.2-win64.exe",
+                      "size":  88331848,
+                      "sha256":  "fd0a5a449ba4cc7be2734bf334ca474d789346ba106f633adb63799afc3d920c"
                   }
 }
