@@ -2,6 +2,14 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.3.3",
+                         "publishedAt":  "2026-09-19T08:38:52Z",
+                         "notes":  [
+                                       "Added Discord Webhook to VoidG",
+                                       "Added Local Proxy in VoidD"
+                                   ]
+                     },
+                     {
                          "version":  "2.3.2",
                          "publishedAt":  "2026-09-16T12:38:48Z",
                          "notes":  [
