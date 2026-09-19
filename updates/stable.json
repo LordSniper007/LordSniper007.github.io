@@ -1,17 +1,16 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.3.3",
-    "publishedAt":  "2026-09-19T08:38:52Z",
+    "version":  "2.3.4",
+    "publishedAt":  "2026-09-19T08:54:29Z",
     "mandatory":  false,
     "notes":  [
-                  "Added Discord Webhook to VoidG",
-                  "Added Local Proxy in VoidD"
+                  "little fix in gui"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.3.3/VoidTools-Setup-v2.3.3-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.3.3-win64.exe",
-                      "size":  87968238,
-                      "sha256":  "af25b9de78a906eec6b666e80a773b87e9ab40d7a661d1fbdce3da6769fb64de"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.3.4/VoidTools-Setup-v2.3.4-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.3.4-win64.exe",
+                      "size":  87975953,
+                      "sha256":  "b28d09951325afdf6d7e0a76d78668086a8336a50b65c9e98491574d33fee931"
                   }
 }

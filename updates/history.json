@@ -2,6 +2,13 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.3.4",
+                         "publishedAt":  "2026-09-19T08:54:29Z",
+                         "notes":  [
+                                       "little fix in gui"
+                                   ]
+                     },
+                     {
                          "version":  "2.3.3",
                          "publishedAt":  "2026-09-19T08:38:52Z",
                          "notes":  [
