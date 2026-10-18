@@ -1,19 +1,24 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.3.6",
-    "publishedAt":  "2026-10-03T21:39:48Z",
+    "version":  "2.3.7-beta.1",
+    "publishedAt":  "2026-10-18T09:29:43Z",
     "mandatory":  false,
     "notes":  [
-                  "Fixed And added a lot in VoidG",
-                  "Improved VoidD Simple Mode",
-                  "Added Global and Private Chat",
-                  "Fixed a lot things in Backend"
+                  "BETA release for testing. Temporarily offered through the stable feed so older VoidTools clients can download it.",
+                  "New VoidStream providers",
+                  "Refreshed design of some tabs",
+                  "Improved Lua Obfuscator",
+                  "Referral codes",
+                  "Reworked TempMail",
+                  "Improved Discord Auto Quest",
+                  "New End-to-End encrypted chat",
+                  "Quick fixes along the way"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.3.6/VoidTools-Setup-v2.3.6-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.3.6-win64.exe",
-                      "size":  88035066,
-                      "sha256":  "3c499ce05d92212c313d10c250cd019c14d69eb9ba0f7d9540f4290cdc945653"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.3.7-beta.1/VoidTools-Setup-v2.3.7-beta.1-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.3.7-beta.1-win64.exe",
+                      "size":  92849556,
+                      "sha256":  "56b24c38ec439776dc0a460ae9b3234c606139e944640664b10cce52789759ac"
                   }
 }
