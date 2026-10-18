@@ -1,0 +1,19 @@
+{
+    "schemaVersion":  1,
+    "releases":  [
+                     {
+                         "version":  "2.3.7-beta.1",
+                         "publishedAt":  "2026-10-18T09:29:43Z",
+                         "notes":  [
+                                       "New VoidStream providers",
+                                       "Refreshed design of some tabs",
+                                       "Improved Lua Obfuscator",
+                                       "Referral codes",
+                                       "Reworked TempMail",
+                                       "Improved Discord Auto Quest",
+                                       "New End-to-End encrypted chat",
+                                       "Quick fixes along the way"
+                                   ]
+                     }
+                 ]
+}

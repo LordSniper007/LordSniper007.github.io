@@ -1,0 +1,23 @@
+{
+    "schemaVersion":  1,
+    "channel":  "beta",
+    "version":  "2.3.7-beta.1",
+    "publishedAt":  "2026-10-18T09:29:43Z",
+    "mandatory":  false,
+    "notes":  [
+                  "New VoidStream providers",
+                  "Refreshed design of some tabs",
+                  "Improved Lua Obfuscator",
+                  "Referral codes",
+                  "Reworked TempMail",
+                  "Improved Discord Auto Quest",
+                  "New End-to-End encrypted chat",
+                  "Quick fixes along the way"
+              ],
+    "installer":  {
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.3.7-beta.1/VoidTools-Setup-v2.3.7-beta.1-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.3.7-beta.1-win64.exe",
+                      "size":  92849556,
+                      "sha256":  "56b24c38ec439776dc0a460ae9b3234c606139e944640664b10cce52789759ac"
+                  }
+}
