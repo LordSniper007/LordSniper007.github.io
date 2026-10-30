@@ -1,23 +1,22 @@
 {
     "schemaVersion":  1,
     "channel":  "beta",
-    "version":  "2.3.7-beta.1",
-    "publishedAt":  "2026-10-18T09:29:43Z",
+    "version":  "2.3.7-beta.2",
+    "publishedAt":  "2026-10-30T22:49:14Z",
     "mandatory":  false,
     "notes":  [
-                  "New VoidStream providers",
-                  "Refreshed design of some tabs",
-                  "Improved Lua Obfuscator",
-                  "Referral codes",
-                  "Reworked TempMail",
-                  "Improved Discord Auto Quest",
-                  "New End-to-End encrypted chat",
-                  "Quick fixes along the way"
+                  "Added halloween theme",
+                  "Added Error VoidTools Helper Assitant",
+                  "Added Cast feature in VoidStream",
+                  "Fixed WebView error 13 issue and fixed some issues with Clerk: Token Expired/Session Expired",
+                  "Improved\u0026Fixed design in some tabs",
+                  "Added website scans for PHP2SHELL CVE-2026-109618 \u0026 CVE-2026-109619",
+                  "Added PHP Exploiting tab where u can test PHP2SHELL CVE-2026-109618 \u0026 CVE-2026-109619 exploits"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.3.7-beta.1/VoidTools-Setup-v2.3.7-beta.1-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.3.7-beta.1-win64.exe",
-                      "size":  92849556,
-                      "sha256":  "56b24c38ec439776dc0a460ae9b3234c606139e944640664b10cce52789759ac"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.3.7-beta.2/VoidTools-Setup-v2.3.7-beta.2-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.3.7-beta.2-win64.exe",
+                      "size":  161662799,
+                      "sha256":  "f55fe897becd2f6a1605c47b2e5e8a7bdd9ab0b69ede1c249b6330a871238f5c"
                   }
 }
