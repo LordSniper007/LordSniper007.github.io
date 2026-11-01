@@ -2,6 +2,29 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.4.0",
+                         "publishedAt":  "2026-11-01T19:29:16Z",
+                         "notes":  [
+                                       "Everything from V2.3.7-beta Builds",
+                                       "Added LDUB to VoidStream (Windows Lector with Google Translate or AI Powerded dubbing)",
+                                       "Added VoidVPN",
+                                       "Added proxies to VoidD",
+                                       "Added new options to VoidLock (tuff)",
+                                       "Added Mark new/changed tools from update in Settings",
+                                       "Reworked OSINT Tool",
+                                       "Reworked Chat (Chat will not work on older versions)",
+                                       "Improved Windows Optimalizator",
+                                       "Improved PHP Exploiting",
+                                       "Improved Website Scanner",
+                                       "Improved VoidTools Error Assitant",
+                                       "Improved design VoidG, VoidD, OSINT, Optimalizator tab",
+                                       "Changed some of icons",
+                                       "Fixed Kernel HWID Spoofer",
+                                       "Fixed main issues with Casting to TV in VoidStream",
+                                       "Fixed main connectivity issues with PhoneCast in VoidStream"
+                                   ]
+                     },
+                     {
                          "version":  "2.3.6",
                          "publishedAt":  "2026-10-03T21:39:48Z",
                          "notes":  [

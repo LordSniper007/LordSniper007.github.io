@@ -1,23 +1,32 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.3.7-beta.2",
-    "publishedAt":  "2026-10-30T22:49:14Z",
+    "version":  "2.4.0",
+    "publishedAt":  "2026-11-01T19:29:16Z",
     "mandatory":  false,
     "notes":  [
-                  "BETA release for testing. Offered through the stable feed so older VoidTools clients can download beta 2.",
-                  "Added halloween theme",
-                  "Added Error VoidTools Helper Assitant",
-                  "Added Cast feature in VoidStream",
-                  "Fixed WebView error 13 issue and fixed some issues with Clerk: Token Expired/Session Expired",
-                  "Improved\u0026Fixed design in some tabs",
-                  "Added website scans for PHP2SHELL CVE-2026-109618 \u0026 CVE-2026-109619",
-                  "Added PHP Exploiting tab where u can test PHP2SHELL CVE-2026-109618 \u0026 CVE-2026-109619 exploits"
+                  "Everything from V2.3.7-beta Builds",
+                  "Added LDUB to VoidStream (Windows Lector with Google Translate or AI Powerded dubbing)",
+                  "Added VoidVPN",
+                  "Added proxies to VoidD",
+                  "Added new options to VoidLock (tuff)",
+                  "Added Mark new/changed tools from update in Settings",
+                  "Reworked OSINT Tool",
+                  "Reworked Chat (Chat will not work on older versions)",
+                  "Improved Windows Optimalizator",
+                  "Improved PHP Exploiting",
+                  "Improved Website Scanner",
+                  "Improved VoidTools Error Assitant",
+                  "Improved design VoidG, VoidD, OSINT, Optimalizator tab",
+                  "Changed some of icons",
+                  "Fixed Kernel HWID Spoofer",
+                  "Fixed main issues with Casting to TV in VoidStream",
+                  "Fixed main connectivity issues with PhoneCast in VoidStream"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.3.7-beta.2/VoidTools-Setup-v2.3.7-beta.2-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.3.7-beta.2-win64.exe",
-                      "size":  161662799,
-                      "sha256":  "f55fe897becd2f6a1605c47b2e5e8a7bdd9ab0b69ede1c249b6330a871238f5c"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.4.0/VoidTools-Setup-v2.4.0-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.4.0-win64.exe",
+                      "size":  157710612,
+                      "sha256":  "d1b47440e1101fcecadd10dc5ad480e05f5ed7f88ce137c18c80ba152d09df74"
                   }
 }
