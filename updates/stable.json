@@ -1,32 +1,23 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.4.0",
-    "publishedAt":  "2026-11-01T19:29:16Z",
+    "version":  "2.4.1",
+    "publishedAt":  "2026-11-13T18:58:43Z",
     "mandatory":  false,
     "notes":  [
-                  "Everything from V2.3.7-beta Builds",
-                  "Added LDUB to VoidStream (Windows Lector with Google Translate or AI Powerded dubbing)",
-                  "Added VoidVPN",
-                  "Added proxies to VoidD",
-                  "Added new options to VoidLock (tuff)",
-                  "Added Mark new/changed tools from update in Settings",
-                  "Reworked OSINT Tool",
-                  "Reworked Chat (Chat will not work on older versions)",
-                  "Improved Windows Optimalizator",
-                  "Improved PHP Exploiting",
-                  "Improved Website Scanner",
-                  "Improved VoidTools Error Assitant",
-                  "Improved design VoidG, VoidD, OSINT, Optimalizator tab",
-                  "Changed some of icons",
-                  "Fixed Kernel HWID Spoofer",
-                  "Fixed main issues with Casting to TV in VoidStream",
-                  "Fixed main connectivity issues with PhoneCast in VoidStream"
+                  "Added VoidPlayer (tuff)",
+                  "Added Github connections",
+                  "Added Game Servers (Minecraft Java/Bedrock and CSGO/CS2 Servers) to VoidD",
+                  "Changed Referall from code to download link",
+                  "Improved VoidG",
+                  "Improved backend of Security tab in account (first verify then changes)",
+                  "Small Improvments of Design\u0026Montion.",
+                  "Mirror improvements in Windows Optimalizer"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.4.0/VoidTools-Setup-v2.4.0-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.4.0-win64.exe",
-                      "size":  157710612,
-                      "sha256":  "d1b47440e1101fcecadd10dc5ad480e05f5ed7f88ce137c18c80ba152d09df74"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.4.1/VoidTools-Setup-v2.4.1-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.4.1-win64.exe",
+                      "size":  156424880,
+                      "sha256":  "bfb1e5861b380c90fd18a779011c60cb382cac6cb23264b1cc8d13f054f932ad"
                   }
 }
