@@ -1,23 +1,23 @@
 {
-    "schemaVersion":  1,
-    "channel":  "stable",
-    "version":  "2.4.1",
-    "publishedAt":  "2026-11-13T18:58:43Z",
-    "mandatory":  false,
-    "notes":  [
-                  "Added VoidPlayer (tuff)",
-                  "Added Github connections",
-                  "Added Game Servers (Minecraft Java/Bedrock and CSGO/CS2 Servers) to VoidD",
-                  "Changed Referall from code to download link",
-                  "Improved VoidG",
-                  "Improved backend of Security tab in account (first verify then changes)",
-                  "Small Improvments of Design\u0026Montion.",
-                  "Mirror improvements in Windows Optimalizer"
-              ],
-    "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.4.1/VoidTools-Setup-v2.4.1-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.4.1-win64.exe",
-                      "size":  156424880,
-                      "sha256":  "bfb1e5861b380c90fd18a779011c60cb382cac6cb23264b1cc8d13f054f932ad"
-                  }
+  "schemaVersion": 1,
+  "channel": "stable",
+  "version": "2.4.1",
+  "publishedAt": "2026-11-13T18:58:43Z",
+  "mandatory": false,
+  "notes": [
+    "Added VoidPlayer (tuff)",
+    "Added Github connections",
+    "Added Game Servers (Minecraft Java/Bedrock and CSGO/CS2 Servers) to VoidD",
+    "Changed Referall from code to download link",
+    "Improved VoidG",
+    "Improved backend of Security tab in account (first verify then changes)",
+    "Small Improvments of Design&Montion.",
+    "Mirror improvements in Windows Optimalizer"
+  ],
+  "installer": {
+    "url": "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.4.1/VoidTools-Setup-v2.4.1-win64.exe",
+    "fileName": "VoidTools-Setup-v2.4.1-win64.exe",
+    "size": 192395041,
+    "sha256": "3b93e3e24a653e354c9372958252721728bfc189a445952a3f9c1b3bcba0175b"
+  }
 }
