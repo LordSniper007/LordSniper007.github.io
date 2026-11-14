@@ -2,6 +2,19 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.4.3",
+                         "publishedAt":  "2026-11-14T23:50:26Z",
+                         "notes":  [
+                                       "Improved HWID Spoof",
+                                       "Fixed VoidD proxy search",
+                                       "Fixed App not opening after login in",
+                                       "Fixed VoidLock not working on Win11",
+                                       "Fixed deleting playlists in VoidPlayer",
+                                       "Fixed SoundCloud being unavailable in VoidPlayer",
+                                       "Fixed button alignment in VoidD and HWID Spoofer"
+                                   ]
+                     },
+                     {
                          "version":  "2.4.2",
                          "publishedAt":  "2026-11-14T00:31:39Z",
                          "notes":  [
