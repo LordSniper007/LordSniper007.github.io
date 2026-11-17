@@ -1,22 +1,18 @@
 {
     "schemaVersion":  1,
     "channel":  "stable",
-    "version":  "2.4.3",
-    "publishedAt":  "2026-11-14T23:50:26Z",
+    "version":  "2.4.4",
+    "publishedAt":  "2026-11-17T22:15:15Z",
     "mandatory":  false,
     "notes":  [
-                  "Improved HWID Spoof",
-                  "Fixed VoidD proxy search",
-                  "Fixed App not opening after login in",
-                  "Fixed VoidLock not working on Win11",
-                  "Fixed deleting playlists in VoidPlayer",
-                  "Fixed SoundCloud being unavailable in VoidPlayer",
-                  "Fixed button alignment in VoidD and HWID Spoofer"
+                  "Fixed Backend not responding",
+                  "Fixed App not working after login",
+                  "Removed Herobrine"
               ],
     "installer":  {
-                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.4.3/VoidTools-Setup-v2.4.3-win64.exe",
-                      "fileName":  "VoidTools-Setup-v2.4.3-win64.exe",
-                      "size":  192478199,
-                      "sha256":  "9f5c4581321a49751a3d3ceeed9e7ac650803c6813e53bf60c0a3d1af0feb3cd"
+                      "url":  "https://github.com/LordSniper007/LordSniper007.github.io/releases/download/v2.4.4/VoidTools-Setup-v2.4.4-win64.exe",
+                      "fileName":  "VoidTools-Setup-v2.4.4-win64.exe",
+                      "size":  192451928,
+                      "sha256":  "a285f5f49033d9c950ac34d5fec1993d1bf2b95563cb803c4c4868d19cdf9278"
                   }
 }

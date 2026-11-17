@@ -2,6 +2,15 @@
     "schemaVersion":  1,
     "releases":  [
                      {
+                         "version":  "2.4.4",
+                         "publishedAt":  "2026-11-17T22:15:15Z",
+                         "notes":  [
+                                       "Fixed Backend not responding",
+                                       "Fixed App not working after login",
+                                       "Removed Herobrine"
+                                   ]
+                     },
+                     {
                          "version":  "2.4.3",
                          "publishedAt":  "2026-11-14T23:50:26Z",
                          "notes":  [
